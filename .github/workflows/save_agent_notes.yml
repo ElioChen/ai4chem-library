@@ -1,0 +1,56 @@
+name: Save Agent Notes
+
+on:
+  push:
+    paths:
+      - 'conversations/**'
+  pull_request:
+    paths:
+      - 'conversations/**'
+
+jobs:
+  save-notes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install notion-client PyGithub
+
+      - name: Run save_note on conversation files
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_BRANCH: ${{ github.ref_name }}
+        run: |
+          shopt -s nullglob || true
+          mkdir -p notes
+          for f in conversations/*.json; do
+            [ -f "$f" ] || continue
+            echo "Processing $f"
+            python save_note.py "$f"
+          done
+
+      - name: Commit and push generated notes
+        run: |
+          git config user.email "noreply@github.com"
+          git config user.name "github-actions[bot]"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add notes || true
+            git commit -m "chore: add generated agent notes [skip ci]" -m "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+            git push origin HEAD:${{ github.ref_name }} || true
+          else
+            echo "No changes to commit"
+          fi

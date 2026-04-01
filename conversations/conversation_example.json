@@ -1,0 +1,9 @@
+{
+  "title": "Agent 会话示例笔记",
+  "date": "2026-04-01T11:40:00Z",
+  "messages": [
+    {"role": "user", "content": "帮我写一个函数，将摄氏度转换为华氏度，并给出示例。"},
+    {"role": "assistant", "content": "下面是函数示例：\n```python\ndef c_to_f(c):\n    return c * 9/5 + 32\n\n# 示例\nprint(c_to_f(0))  # 32.0\n```\n你可以把它保存为代码文件。"},
+    {"role": "user", "content": "把这段对话保存为笔记并上传到 Notion 和 GitHub。"}
+  ]
+}
