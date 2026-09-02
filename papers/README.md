@@ -1,25 +1,54 @@
-# AI4Chem 文献库
+# AI4Chem 文献库 📚
 
-每天 06:00 由 Claude Code Routine 自动检索并更新。检索范围：arXiv
-(cs.LG, physics.chem-ph, cond-mat.mtrl-sci, q-bio.BM)、ChemRxiv、bioRxiv。
+一个由 AI 驱动的分子机器学习文献与工具自动收集系统。每天 06:00 (荷兰时间) 自动检索最新研究进展、整理归档、发现有趣的开源项目。
 
-去重索引见 `index.json`；按月归档见 `YYYY-MM.md`。
+## 🎯 覆盖范围
 
-## 统计（由 Routine 每次运行后自动更新此区块）
+**学术平台**：arXiv (cs.LG, physics.chem-ph, cond-mat.mtrl-sci, q-bio.BM)、ChemRxiv、bioRxiv
 
-- 累计收录：0 篇
-- 本周新增：0 篇
-- 最近更新：（尚未运行）
+**研究方向**（分子机器学习全景）：
+- 🏗️ 基础模型与势函数：Foundation MLIP、神经网络势函数、DFT 替代
+- ⚛️ 分子表示学习：图神经网络、等变神经网络、分子编码
+- 🔗 反应与过渡态：反应预测、过渡态搜索、反应路径规划
+- 🎨 生成与优化：分子生成、扩散模型、生成模型化学
+- 🧪 催化与应用：催化剂发现、高通量筛选、药物设计、材料设计
 
-### 按标签分布
+## 📖 使用指南
 
-| 标签 | 数量 |
-|---|---|
-| #foundation-MLIP | 0 |
-| #TS-search | 0 |
-| #organocatalysis | 0 |
-| #ml4chem-general | 0 |
+- **去重索引**：`index.json` — 所有已收录论文的 arXiv ID、DOI、时间戳
+- **按月归档**：`YYYY-MM.md` — 每月新增论文详情（标题、作者、摘要、标签）
+- **自动化配置**：`ROUTINE_PROMPT.md` — 云端 Routine 的执行流程定义
 
-## 月度归档
+## 统计（由 Routine 每次运行后自动更新）
+
+- 📊 累计收录：0 篇论文
+- 🆕 本周新增：0 篇
+- 🕐 最近更新：（尚未运行）
+
+### 按研究方向分布
+
+| 标签 | 数量 | 说明 |
+|---|---|---|
+| #foundation-MLIP | 0 | Foundation 模型、MLIP、DFT 替代相关 |
+| #TS-search | 0 | 过渡态搜索、反应路径相关 |
+| #organocatalysis | 0 | 有机催化、NHC 相关 |
+| #ml4chem-general | 0 | 其他分子 ML 研究 |
+
+## 📅 月度归档
 
 （尚无归档，第一次运行后会自动生成 `YYYY-MM.md` 并在此列出链接）
+
+## 🔧 相关开源项目
+
+（发现的有趣 GitHub 项目会在此自动列出）
+
+## 🤖 关于自动化
+
+本仓库由 Claude Code 云端 Routine 驱动，每天 06:00 荷兰时间自动执行以下任务：
+1. 用 web_search 检索分子 ML 相关的最新论文预印本
+2. 自动编写摘要、标注研究方向标签
+3. 维护 JSON 去重索引与月度 Markdown 归档
+4. 发现并推荐相关的开源项目
+5. Git commit 并提交更新
+
+更多详情见 `ROUTINE_PROMPT.md`。
