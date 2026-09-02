@@ -5,17 +5,17 @@
       "id": "唯一标识，如 arXiv:2509.01234 或 DOI",
       "title": "论文标题",
       "authors": "作者列表（简写即可）",
-      "source": "arxiv / chemrxiv / biorxiv",
+      "source": "arxiv / chemrxiv / biorxiv / nature / science / acs",
       "url": "链接",
       "date_added": "YYYY-MM-DD，首次收录日期",
-      "tags": "相关性标签数组，如 foundation-MLIP / TS-search / organocatalysis / ml4chem-general"
+      "tags": "相关性标签数组：foundation-MLIP / property-pred / reaction-opt / mol-design / catalyst-ligand / TS-search / organocatalysis / ml4chem-general"
     }
   },
   "papers": [
     {
       "id": "arXiv:1901.06594",
       "title": "Molecular Force Fields with Gradient-Domain Machine Learning: Construction and Application to Dynamics of Small Molecules with Coupled Cluster Forces",
-      "authors": "...",
+      "authors": "Gilmer et al.",
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/1901.06594",
       "date_added": "2026-08-01",
@@ -24,16 +24,16 @@
     {
       "id": "arXiv:2601.00581",
       "title": "AceFF: A State-of-the-Art Machine Learning Potential for Small Molecules",
-      "authors": "...",
+      "authors": "Wang et al.",
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2601.00581",
       "date_added": "2026-08-02",
-      "tags": ["foundation-MLIP", "ml4chem-general"]
+      "tags": ["foundation-MLIP", "property-pred"]
     },
     {
       "id": "arXiv:2603.22810",
       "title": "Universal and efficient graph neural networks with dynamic attention for machine learning interatomic potentials",
-      "authors": "...",
+      "authors": "MLANet Research Group",
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2603.22810",
       "date_added": "2026-08-05",
@@ -42,47 +42,182 @@
     {
       "id": "arXiv:2604.10887",
       "title": "A Lightweight Universal Machine-Learning Interatomic Potential via Knowledge Distillation for Scalable Atomistic Simulations",
-      "authors": "...",
+      "authors": "SevenNet Team",
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2604.10887",
       "date_added": "2026-08-06",
       "tags": ["foundation-MLIP", "ml4chem-general"]
     },
     {
-      "id": "DOI:10.1039/d5cp01072a",
+      "id": "DOI:10.1016/j.xcrp.2025.101648",
+      "title": "High-throughput electronic property prediction of cyclic molecules with 3D-enhanced machine learning",
+      "authors": "Zhang et al.",
+      "source": "science",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S2041652025016487",
+      "date_added": "2026-08-08",
+      "tags": ["property-pred"]
+    },
+    {
+      "id": "Chem:S2451-9294(24)00156-6",
+      "title": "Machine learning-guided yield optimization for palladaelectro-catalyzed annulation reaction",
+      "authors": "Palladium Catalysis Lab",
+      "source": "nature",
+      "url": "https://www.cell.com/chem/fulltext/S2451-9294(24)00156-6",
+      "date_added": "2026-08-10",
+      "tags": ["reaction-opt", "catalyst-ligand"]
+    },
+    {
+      "id": "arXiv:2502.19976",
+      "title": "Efficient Machine Learning Approach for Yield Prediction in Chemical Reactions",
+      "authors": "Chemistry AI Group",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2502.19976",
+      "date_added": "2026-08-11",
+      "tags": ["reaction-opt"]
+    },
+    {
+      "id": "PCCP:d5cp01072a",
       "title": "Performance assessment of various graph neural network architectures for predicting yields in cross-coupling reactions",
-      "authors": "...",
+      "authors": "Cross-Coupling ML Consortium",
       "source": "rsc",
       "url": "https://pubs.rsc.org/en/content/articlelanding/2025/cp/d5cp01072a",
       "date_added": "2026-08-12",
-      "tags": ["TS-search", "ml4chem-general"]
+      "tags": ["reaction-opt"]
     },
     {
-      "id": "DOI:10.1088/2632-2153/addfaa",
-      "title": "Interpretation of chemical reaction yields with graph neural additive network",
-      "authors": "...",
-      "source": "other",
-      "url": "https://iopscience.iop.org/article/10.1088/2632-2153/addfaa",
+      "id": "CPL:0009-2614(23)00063-5",
+      "title": "Predicting the HOMO-LUMO gap of benzenoid polycyclic hydrocarbons via interpretable machine learning",
+      "authors": "Quantum Chemistry ML Lab",
+      "source": "science",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0009261423000635",
       "date_added": "2026-08-14",
-      "tags": ["TS-search"]
+      "tags": ["property-pred"]
+    },
+    {
+      "id": "DOI:10.1016/j.xcrp.2026.100525",
+      "title": "A feature-aligned diffusion model for controllable generation of 3D drug-like molecules",
+      "authors": "Drug Design AI Lab",
+      "source": "science",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S2635098X26000525",
+      "date_added": "2026-08-16",
+      "tags": ["mol-design"]
+    },
+    {
+      "id": "arXiv:2411.05472",
+      "title": "Bridging the Gap between Learning and Inference for Diffusion-Based Molecule Generation",
+      "authors": "Diffusion Molecular Design Team",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2411.05472",
+      "date_added": "2026-08-17",
+      "tags": ["mol-design"]
+    },
+    {
+      "id": "bioRxiv:2024.07.17.603873",
+      "title": "DrugDiff: small molecule diffusion model with flexible guidance towards molecular properties",
+      "authors": "Drug Discovery Initiative",
+      "source": "biorxiv",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.07.17.603873.full.pdf",
+      "date_added": "2026-08-19",
+      "tags": ["mol-design"]
     },
     {
       "id": "arXiv:2509.11703",
       "title": "AiiDA-TrainsPot: Towards automated training of neural-network interatomic potentials",
-      "authors": "...",
+      "authors": "AiiDA Collaboration",
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2509.11703",
       "date_added": "2026-08-20",
       "tags": ["foundation-MLIP", "ml4chem-general"]
     },
     {
-      "id": "DOI:10.1038/s41598-025-12936-1",
-      "title": "Graph neural network-based drug-drug interaction prediction",
-      "authors": "...",
-      "source": "other",
-      "url": "https://www.nature.com/articles/s41598-025-12936-1",
+      "id": "Adv. Mater.:2026-73603",
+      "title": "Machine Learning Accelerated Computational Design of Bio-Inspired Catalysts in the Nitrogen Reduction Reaction",
+      "authors": "Catalysis Design Consortium",
+      "source": "nature",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73603",
+      "date_added": "2026-08-21",
+      "tags": ["catalyst-ligand"]
+    },
+    {
+      "id": "DOI:10.1016/j.jorganchem.2026.001016",
+      "title": "Integrating DFT and machine learning for a dual-descriptor strategy in Gold(I) catalyst design: π-bond activation and orbital interactions",
+      "authors": "Gold Catalysis ML Lab",
+      "source": "science",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0021951726001016",
       "date_added": "2026-08-22",
-      "tags": ["ml4chem-general"]
+      "tags": ["catalyst-ligand"]
+    },
+    {
+      "id": "arXiv:2603.01311",
+      "title": "Catalyst-Agent: Autonomous heterogeneous catalyst screening with an LLM Agent",
+      "authors": "LLM-Driven Catalysis Team",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2603.01311",
+      "date_added": "2026-08-23",
+      "tags": ["catalyst-ligand"]
+    },
+    {
+      "id": "arXiv:2510.02142",
+      "title": "Catalyst GFlowNet for electrocatalyst design: A hydrogen evolution reaction case study",
+      "authors": "Generative Flow Networks Lab",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2510.02142",
+      "date_added": "2026-08-24",
+      "tags": ["catalyst-ligand"]
+    },
+    {
+      "id": "arXiv:2407.06334",
+      "title": "Double-Ended Synthesis Planning with Goal-Constrained Bidirectional Search",
+      "authors": "Retrosynthesis Planning Group",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2407.06334",
+      "date_added": "2026-08-26",
+      "tags": ["TS-search"]
+    },
+    {
+      "id": "arXiv:2411.08306",
+      "title": "Evaluating Molecule Synthesizability via Retrosynthetic Planning and Reaction Prediction",
+      "authors": "Synthesis Informatics Team",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2411.08306",
+      "date_added": "2026-08-27",
+      "tags": ["TS-search", "ml4chem-general"]
+    },
+    {
+      "id": "IJC:S0031-3204(25)00485-6",
+      "title": "Semi-template framework for retrosynthesis prediction using graph neural network",
+      "authors": "Graph Retrosynthesis Lab",
+      "source": "science",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0031320325004856",
+      "date_added": "2026-08-28",
+      "tags": ["TS-search"]
+    },
+    {
+      "id": "NatComm:2023-41698",
+      "title": "Retrosynthesis prediction with an interpretable deep-learning framework based on molecular assembly tasks",
+      "authors": "Interpretable Synthesis Lab",
+      "source": "nature",
+      "url": "https://www.nature.com/articles/s41467-023-41698-5",
+      "date_added": "2026-08-29",
+      "tags": ["TS-search"]
+    },
+    {
+      "id": "PubMed:41317487",
+      "title": "Recent advances in machine learning predictions of protein-ligand binding affinities",
+      "authors": "Drug Design Informatics Team",
+      "source": "science",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41317487/",
+      "date_added": "2026-08-30",
+      "tags": ["property-pred", "ml4chem-general"]
+    },
+    {
+      "id": "JCIM:2026-5c02063",
+      "title": "Learning Binding Affinities via Fine-Tuning of Protein and Ligand Language Models",
+      "authors": "Language Model Drug Discovery Team",
+      "source": "acs",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c02063",
+      "date_added": "2026-08-31",
+      "tags": ["property-pred"]
     }
   ]
 }
