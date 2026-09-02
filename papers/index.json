@@ -1,0 +1,15 @@
+{
+  "_schema": {
+    "note": "每条记录代表一篇已收录的论文/预印本，用于去重。id 优先用 arXiv ID，没有则用 DOI 或稳定链接。",
+    "fields": {
+      "id": "唯一标识，如 arXiv:2509.01234 或 DOI",
+      "title": "论文标题",
+      "authors": "作者列表（简写即可）",
+      "source": "arxiv / chemrxiv / biorxiv",
+      "url": "链接",
+      "date_added": "YYYY-MM-DD，首次收录日期",
+      "tags": "相关性标签数组，如 foundation-MLIP / TS-search / organocatalysis / ml4chem-general"
+    }
+  },
+  "papers": []
+}
