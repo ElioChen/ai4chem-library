@@ -29,10 +29,11 @@
      reinforcement learning molecule design, molecular optimization, 
      drug-like molecule generation, scaffold optimization
    
-   **E. 催化剂与配体设计**：
+   **E. 催化剂与配体设计（含有机催化/不对称）**：
    - catalyst design machine learning, catalyst discovery, ligand design optimization,
-     catalysis screening ML, transition metal complex design, 
-     NHC carbene design, organocatalysis ML
+     catalysis screening ML, transition metal complex design, NHC carbene design,
+     organocatalysis machine learning, asymmetric catalysis ML, chiral catalyst prediction,
+     enantioselectivity prediction, organic catalyst design, electrostatic foundation model catalysis
    
    **F. DFT 替代与加速**：
    - DFT surrogate model, machine learning density functional theory, 
@@ -43,6 +44,13 @@
    - reaction pathway prediction, transition state search, retrosynthesis prediction,
      reaction mechanism ML, molecular dynamics machine learning,
      reaction network generation, automated reaction discovery
+
+   **H. 大语言模型在化学中的应用（LLM+CHEM）**：
+   - large language model chemistry, LLM for chemistry, chemical reasoning LLM,
+     prompt engineering chemistry, natural language processing chemistry,
+     conversational AI chemistry, chemical question answering, 
+     LLM for reaction prediction, LLM for retrosynthesis, LLM for drug discovery,
+     multimodal chemistry LLM
 
 3. 过滤掉 index.json 中已存在的条目。
 
@@ -55,9 +63,10 @@
      - #property-pred — 分子性质预测
      - #reaction-opt — 化学反应优化
      - #mol-design — 分子/生成模型设计
-     - #catalyst-ligand — 催化剂/配体设计
+     - #catalyst-ligand — 催化剂/配体设计（含不对称催化）
      - #TS-search — 反应路径/过渡态搜索
-     - #organocatalysis — 有机催化相关
+     - #organocatalysis — 有机催化相关（新增权重）
+     - #llm-chem — LLM + 化学应用（新增）
      - #ml4chem-general — 其他分子 ML
 
 5. 把新条目追加到 papers/index.json 和 papers/<当月，格式 YYYY-MM>.md，

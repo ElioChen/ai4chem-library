@@ -40,6 +40,15 @@
       "tags": ["foundation-MLIP", "mol-design"]
     },
     {
+      "id": "arXiv:2602.19411",
+      "title": "MACE-POLAR-1: A Polarisable Electrostatic Foundation Model for Molecular Chemistry",
+      "authors": "Batatia et al.",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2602.19411",
+      "date_added": "2026-02-15",
+      "tags": ["foundation-MLIP", "property-pred", "catalyst-ligand"]
+    },
+    {
       "id": "arXiv:2507.01444",
       "title": "A Large Language Model for Chemistry and Retrosynthesis Predictions",
       "authors": "LLM Chemistry Lab",
