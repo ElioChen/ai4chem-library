@@ -11,5 +11,78 @@
       "tags": "相关性标签数组，如 foundation-MLIP / TS-search / organocatalysis / ml4chem-general"
     }
   },
-  "papers": []
+  "papers": [
+    {
+      "id": "arXiv:1901.06594",
+      "title": "Molecular Force Fields with Gradient-Domain Machine Learning: Construction and Application to Dynamics of Small Molecules with Coupled Cluster Forces",
+      "authors": "...",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/1901.06594",
+      "date_added": "2026-08-01",
+      "tags": ["foundation-MLIP"]
+    },
+    {
+      "id": "arXiv:2601.00581",
+      "title": "AceFF: A State-of-the-Art Machine Learning Potential for Small Molecules",
+      "authors": "...",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2601.00581",
+      "date_added": "2026-08-02",
+      "tags": ["foundation-MLIP", "ml4chem-general"]
+    },
+    {
+      "id": "arXiv:2603.22810",
+      "title": "Universal and efficient graph neural networks with dynamic attention for machine learning interatomic potentials",
+      "authors": "...",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2603.22810",
+      "date_added": "2026-08-05",
+      "tags": ["foundation-MLIP"]
+    },
+    {
+      "id": "arXiv:2604.10887",
+      "title": "A Lightweight Universal Machine-Learning Interatomic Potential via Knowledge Distillation for Scalable Atomistic Simulations",
+      "authors": "...",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2604.10887",
+      "date_added": "2026-08-06",
+      "tags": ["foundation-MLIP", "ml4chem-general"]
+    },
+    {
+      "id": "DOI:10.1039/d5cp01072a",
+      "title": "Performance assessment of various graph neural network architectures for predicting yields in cross-coupling reactions",
+      "authors": "...",
+      "source": "rsc",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2025/cp/d5cp01072a",
+      "date_added": "2026-08-12",
+      "tags": ["TS-search", "ml4chem-general"]
+    },
+    {
+      "id": "DOI:10.1088/2632-2153/addfaa",
+      "title": "Interpretation of chemical reaction yields with graph neural additive network",
+      "authors": "...",
+      "source": "other",
+      "url": "https://iopscience.iop.org/article/10.1088/2632-2153/addfaa",
+      "date_added": "2026-08-14",
+      "tags": ["TS-search"]
+    },
+    {
+      "id": "arXiv:2509.11703",
+      "title": "AiiDA-TrainsPot: Towards automated training of neural-network interatomic potentials",
+      "authors": "...",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2509.11703",
+      "date_added": "2026-08-20",
+      "tags": ["foundation-MLIP", "ml4chem-general"]
+    },
+    {
+      "id": "DOI:10.1038/s41598-025-12936-1",
+      "title": "Graph neural network-based drug-drug interaction prediction",
+      "authors": "...",
+      "source": "other",
+      "url": "https://www.nature.com/articles/s41598-025-12936-1",
+      "date_added": "2026-08-22",
+      "tags": ["ml4chem-general"]
+    }
+  ]
 }
