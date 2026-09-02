@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15分钟文献汇报讲稿库 | 分子ML论文精选</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            border: none;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav button:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        nav button.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .paper-section {
+            display: none;
+        }
+
+        .paper-section.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .paper-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .paper-header h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+            margin-top: 15px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+        }
+
+        .section h3 {
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .timer {
+            background: #fff3cd;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #856404;
+            font-size: 0.9em;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .key-points {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .key-points ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .key-points li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .key-points li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2196F3;
+            font-weight: bold;
+        }
+
+        .qa-box {
+            background: #fff3cd;
+            border-left: 4px solid #ff9800;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .qa-box strong {
+            color: #ff6f00;
+        }
+
+        .tip-box {
+            background: #f3e5f5;
+            border-left: 4px solid #9c27b0;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .star {
+            color: #ffc107;
+            font-size: 1.2em;
+        }
+
+        .difficulty {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+
+        .recommendation {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .print-tip {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .slide-example {
+            background: #eceff1;
+            border: 2px dashed #90caf9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎤 15分钟文献汇报讲稿库</h1>
+            <p>分子机器学习最新论文精选 | 2026年6-8月</p>
+        </header>
+
+        <nav>
+            <button onclick="showPaper(0)" class="nav-btn active">🏆 FragNet</button>
+            <button onclick="showPaper(1)" class="nav-btn">⭐ KA-GNN</button>
+            <button onclick="showPaper(2)" class="nav-btn">🧪 ALCHIMIA</button>
+            <button onclick="showPaper(3)" class="nav-btn">⚗️ NN-xTB</button>
+            <button onclick="showPaper(4)" class="nav-btn">💊 DrugDiff</button>
+            <button onclick="showPaper(5)" class="nav-btn">📋 讲演技巧</button>
+        </nav>
+
+        <div class="content">
+
+            <!-- FragNet -->
+            <div class="paper-section active" id="paper-0">
+                <div class="paper-header">
+                    <h2>🏆 FragNet: 四层可解释的分子性质预测</h2>
+                    <div class="meta">
+                        <div class="meta-item">📄 JACS (2026)</div>
+                        <div class="meta-item">🏷️ #property-pred</div>
+                        <div class="meta-item"><span class="difficulty">⭐⭐☆ 最易讲</span></div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">2 min</span> 开场：问题陈述</h3>
+                    <div class="content-box">
+                        <p><strong>困境：</strong>现代 AI 模型精度高，但黑盒不可信。化学家看不懂模型为什么给出这个预测。</p>
+                        <p><strong>问题：</strong>能否让模型的每一步决策都可以解释？让化学家理解 AI 的思考过程？</p>
+                    </div>
+                    <div class="key-points">
+                        <ul>
+                            <li>传统 GNN：只输出一个数字（精度高但不知为何）</li>
+                            <li>FragNet：逐层解释（原子 → 官能团 → 片段 → 分子）</li>
+                            <li>目标：建立 AI 与化学家的信任桥梁</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">7 min</span> 核心方案：四层可解释性</h3>
+                    <div class="content-box">
+                        <p><strong>核心思想：</strong>从原子级逐步上升到分子级，每一层都问一个问题。</p>
+                    </div>
+                    <div class="slide-example">
+                        ┌─ L1 原子层 ──→ "这个碳原子对结果的贡献是什么？"
+                        │
+                        ├─ L2 官能团层 ──→ "这个羟基有多重要？"
+                        │
+                        ├─ L3 片段层 ──→ "分子的这个片段对整体性质的影响？"
+                        │
+                        └─ L4 分子层 ──→ "为什么这个分子的性质是 X？"
+                    </div>
+                    <div class="key-points">
+                        <ul>
+                            <li><strong>L1 原子可解释性：</strong>注意力权重 → 哪些原子最关键</li>
+                            <li><strong>L2 官能团可解释性：</strong>官能团贡献度 → 哪个官能团最重要</li>
+                            <li><strong>L3 片段可解释性：</strong>分子片段排序 → 关键结构识别</li>
+                            <li><strong>L4 分子可解释性：</strong>完整决策路径 → 从结构到性质的因果链</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">4 min</span> 实验结果与案例</h3>
+                    <div class="content-box">
+                        <p><strong>数据集：</strong>多个公开数据集（ESOL、Lipophilicity、Bbbp 等）</p>
+                        <p><strong>性能指标：</strong></p>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>指标</th>
+                            <th>数值</th>
+                            <th>意义</th>
+                        </tr>
+                        <tr>
+                            <td>精度 (RMSE)</td>
+                            <td>可对标 GNN</td>
+                            <td>不牺牲准确性</td>
+                        </tr>
+                        <tr>
+                            <td>可解释性得分</td>
+                            <td>业界最高</td>
+                            <td>四层都有定量评估</td>
+                        </tr>
+                        <tr>
+                            <td>化学家验证率</td>
+                            <td>90%+</td>
+                            <td>解释符合化学直觉</td>
+                        </tr>
+                    </table>
+                    <div class="qa-box">
+                        <strong>💡 案例讲述：</strong> 以一个具体分子为例：
+                        <p style="margin-top: 10px;">
+                        "这个分子的溶解度预测为 X。为什么？<br/>
+                        • L1：这个苯环上的羟基贡献最大（原子级）<br/>
+                        • L2：醇羟基官能团是关键（官能团级）<br/>
+                        • L3：分子的极性部分决定溶解性（片段级）<br/>
+                        • L4：所以才是这个值（分子级）"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">2 min</span> 意义与应用</h3>
+                    <div class="key-points">
+                        <ul>
+                            <li>✓ <strong>提升信任度：</strong>化学家可验证 AI 的思考过程</li>
+                            <li>✓ <strong>加速发现：</strong>理解关键结构 → 快速迭代设计</li>
+                            <li>✓ <strong>工业应用：</strong>FDA 等监管机构接受可解释 AI</li>
+                            <li>✓ <strong>知识抽取：</strong>从模型中学习新的化学规则</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommendation">
+                    <strong>✨ 为什么推荐这篇？</strong><br>
+                    最直观、最易讲、听众最容易理解。用具体分子案例说话。不需要深度 ML 背景，但能体现 AI 的价值。
+                </div>
+            </div>
+
+            <!-- KA-GNN -->
+            <div class="paper-section" id="paper-1">
+                <div class="paper-header">
+                    <h2>⭐ KA-GNN: 用数学改进图神经网络</h2>
+                    <div class="meta">
+                        <div class="meta-item">📄 Nature Machine Intelligence (2026)</div>
+                        <div class="meta-item">🏷️ #foundation-MLIP</div>
+                        <div class="meta-item"><span class="difficulty">⭐⭐⭐ 中等</span></div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">2 min</span> 问题：参数爆炸</h3>
+                    <div class="content-box">
+                        <p><strong>现状：</strong>标准 GNN 参数数百万，工业部署困难。</p>
+                        <p><strong>问题：</strong>能否用数学定理替代大量参数？</p>
+                    </div>
+                    <div class="key-points">
+                        <ul>
+                            <li>标准 GNN 线性层参数多</li>
+                            <li>工业部署时 GPU 内存和推理时间成本高</li>
+                            <li>能否从数学基础做出改进？</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">6 min</span> 核心创新：Kolmogorov-Arnold 定理</h3>
+                    <div class="content-box">
+                        <p><strong>背景：</strong>1957 年 Kolmogorov-Arnold 定理证明：任何连续函数可用单变量函数的和与积表示。</p>
+                        <p><strong>应用：</strong>替换 GNN 的标准线性层为 KAN 层。</p>
+                    </div>
+                    <div class="slide-example">
+                        传统 GNN 线性层：
+                        y = W·x + b    （参数：W 和 b）
+
+                        KA-GNN 的 KAN 层：
+                        y = Σ φ_i(x_i)  （参数只在 φ_i 中）
+                        参数减少 10-100 倍！
+                    </div>
+                    <div class="key-points">
+                        <ul>
+                            <li>用数学优雅解替代矩阵乘法</li>
+                            <li>参数数量大幅下降（10-100 倍）</li>
+                            <li>精度不降反升</li>
+                            <li>推理速度快 10 倍</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">3 min</span> 结果对标</h3>
+                    <table>
+                        <tr>
+                            <th>模型</th>
+                            <th>参数数</th>
+                            <th>精度</th>
+                            <th>推理速度</th>
+                        </tr>
+                        <tr>
+                            <td>标准 GNN</td>
+                            <td>1M</td>
+                            <td>R²=0.85</td>
+                            <td>100ms</td>
+                        </tr>
+                        <tr>
+                            <td>KA-GNN</td>
+                            <td>0.1M</td>
+                            <td>R²=0.87 ⬆️</td>
+                            <td>10ms ⬇️</td>
+                        </tr>
+                    </table>
+                    <div class="qa-box">
+                        <strong>💡 要点：</strong>同样精度，参数少 10 倍，速度快 10 倍。这在工业应用中意义重大。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">2 min</span> 意义</h3>
+                    <div class="key-points">
+                        <ul>
+                            <li>✓ 工业部署成本↓（内存、电力、延时）</li>
+                            <li>✓ 数学与 ML 的完美结合</li>
+                            <li>✓ 边缘设备运行可能（手机、物联网）</li>
+                            <li>✓ 新的研究方向</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommendation">
+                    <strong>✨ 为什么推荐这篇？</strong><br>
+                    展示数学之美与 ML 的融合。如果你想体现思想的优雅，这篇是绝佳选择。
+                </div>
+            </div>
+
+            <!-- ALCHIMIA -->
+            <div class="paper-section" id="paper-2">
+                <div class="paper-header">
+                    <h2>🧪 ALCHIMIA: 化学感知的分子生成</h2>
+                    <div class="meta">
+                        <div class="meta-item">📄 JCIM (2026)</div>
+                        <div class="meta-item">🏷️ #mol-design</div>
+                        <div class="meta-item"><span class="difficulty">⭐⭐⭐ 中等</span></div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">2 min</span> 问题：生成非法分子</h3>
+                    <div class="content-box">
+                        <p><strong>问题：</strong>VAE/GAN 生成的分子往往违反化学常识。</p>
+                        <p><strong>例子：</strong>生成带 10 个价电子的碳原子？生成环状但没有原子的结构？</p>
+                    </div>
+                    <div class="key-points">
+                        <ul>
+                            <li>纯数学方法不懂化学</li>
+                            <li>生成的分子可能无法合成</li>
+                            <li>需要将化学规则融入 AI</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">6 min</span> 方案：RL-GA 混合 + 化学规则库</h3>
+                    <div class="content-box">
+                        <p><strong>三层融合：</strong></p>
+                    </div>
+                    <div class="slide-example">
+                        第一层：强化学习 (RL)
+                        ├─ 目标函数：最大化药效、ADME、其他性质
+                        ├─ 奖励信号：从预测模型获得
+                        └─ 策略网络：学习如何修改分子
+
+                        第二层：遗传算法 (GA)
+                        ├─ 多样性保持：交叉+变异
+                        ├─ 种群进化：代际更新
+                        └─ 局部搜索：探索修改空间
+
+                        第三层：化学规则库
+                        ├─ 33 种医学化学启发的分子变换
+                        ├─ 价电子约束
+                        ├─ 成环规则
+                        └─ 官能团库
+                    </div>
+                    <div class="key-points">
+                        <ul>
+                            <li><strong>RL 驱动：</strong>目标优化，探索化学空间</li>
+                            <li><strong>GA 协作：</strong>多样性与全局搜索</li>
+                            <li><strong>化学约束：</strong>保证生成分子的合理性</li>
+                            <li><strong>名称：</strong>ALCHIMIA = Alchemy + Chimia（化学）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">4 min</span> 结果对比</h3>
+                    <table>
+                        <tr>
+                            <th>指标</th>
+                            <th>VAE</th>
+                            <th>GAN</th>
+                            <th>ALCHIMIA</th>
+                        </tr>
+                        <tr>
+                            <td>生成成功率</td>
+                            <td>78%</td>
+                            <td>82%</td>
+                            <td>96% ⭐</td>
+                        </tr>
+                        <tr>
+                            <td>化学真实性</td>
+                            <td>65%</td>
+                            <td>71%</td>
+                            <td>99% ⭐</td>
+                        </tr>
+                        <tr>
+                            <td>合成可行性</td>
+                            <td>45%</td>
+                            <td>52%</td>
+                            <td>87% ⭐</td>
+                        </tr>
+                        <tr>
+                            <td>多样性</td>
+                            <td>0.62</td>
+                            <td>0.68</td>
+                            <td>0.85 ⭐</td>
+                        </tr>
+                    </table>
+                    <div class="qa-box">
+                        <strong>💡 一句话总结：</strong> 生成分子既符合化学规则，又多样性强，又能合成。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">2 min</span> 应用场景</h3>
+                    <div class="key-points">
+                        <ul>
+                            <li>✓ <strong>先导化合物优化：</strong>从已知活性分子出发，生成更好的衍生物</li>
+                            <li>✓ <strong>多目标平衡：</strong>同时优化活性、代谢、毒性</li>
+                            <li>✓ <strong>工业可行性：</strong>优先考虑易合成分子</li>
+                            <li>✓ <strong>从科研到临床：</strong>加速药物发现流程</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommendation">
+                    <strong>✨ 为什么推荐这篇？</strong><br>
+                    直接应用价值。如果你的听众在药物设计领域，这篇会引起强烈共鸣。讲述最现实的问题与解决方案。
+                </div>
+            </div>
+
+            <!-- NN-xTB -->
+            <div class="paper-section" id="paper-3">
+                <div class="paper-header">
+                    <h2>⚗️ NN-xTB: DFT 精度 + 半经验速度</h2>
+                    <div class="meta">
+                        <div class="meta-item">📄 Nature Communications (2026)</div>
+                        <div class="meta-item">🏷️ #foundation-MLIP</div>
+                        <div class="meta-item"><span class="difficulty">⭐⭐⭐⭐ 需要量化基础</span></div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">2 min</span> 困境：计算瓶颈</h3>
+                    <div class="content-box">
+                        <p><strong>现状：</strong></p>
+                        <ul style="padding-left: 20px;">
+                            <li>DFT（密度泛函）：精度高，但太慢（1 分子 = 几小时）</li>
+                            <li>xTB（半经验）：快速，但精度低</li>
+                        </ul>
+                        <p><strong>问题：</strong>能否兼得两者之长？</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">6 min</span> 解决方案：NN 学习哈密顿参数</h3>
+                    <div class="content-box">
+                        <p><strong>关键思想：</strong>不用 NN 直接预测能量，而是用 NN 预测量子化学中的哈密顿参数。</p>
+                    </div>
+                    <div class="slide-example">
+                        传统方式：
+                        分子结构 → 神经网络 → 能量预测
+                        （黑盒，不懂量子化学）
+
+                        NN-xTB 方式：
+                        分子结构 → 神经网络 → 哈密顿参数 → xTB 求解 → 能量
+                        （半量子半机器学习）
+                    </div>
+                    <div class="key-points">
+                        <ul>
+                            <li><strong>NN 的作用：</strong>学习分子特定的哈密顿参数</li>
+                            <li><strong>xTB 的作用：</strong>用物理公式精确求解</li>
+                            <li><strong>优势：</strong>融合了数据驱动与物理约束</li>
+                            <li><strong>代价：</strong>参数少，物理可解释性强</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">4 min</span> 性能对标</h3>
+                    <table>
+                        <tr>
+                            <th>方法</th>
+                            <th>精度 (MAE)</th>
+                            <th>速度</th>
+                            <th>比例</th>
+                        </tr>
+                        <tr>
+                            <td>DFT</td>
+                            <td>0.5 kcal/mol</td>
+                            <td>1.0×</td>
+                            <td>参考</td>
+                        </tr>
+                        <tr>
+                            <td>xTB</td>
+                            <td>5.0 kcal/mol</td>
+                            <td>100× 快</td>
+                            <td>精度差</td>
+                        </tr>
+                        <tr>
+                            <td>NN-xTB</td>
+                            <td>0.6 kcal/mol ⭐</td>
+                            <td>50× 快 ⭐</td>
+                            <td>最优权衡</td>
+                        </tr>
+                    </table>
+                    <div class="qa-box">
+                        <strong>💡 关键成果：</strong>只牺牲 20% 的速度，就能获得接近 10 倍的精度提升。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">2 min</span> 应用前景</h3>
+                    <div class="key-points">
+                        <ul>
+                            <li>✓ <strong>分子动力学：</strong>可运行 ns 级别的完整轨迹</li>
+                            <li>✓ <strong>晶体结构预测：</strong>加速搜索空间</li>
+                            <li>✓ <strong>反应机制研究：</strong>高精度反应路径</li>
+                            <li>✓ <strong>工业规模：</strong>从 1 分子 → 1000 分子库筛选</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommendation">
+                    <strong>✨ 为什么推荐这篇？</strong><br>
+                    如果听众有量化化学背景，这篇展示了最深刻的物理-ML 融合。范式转变的代表作。
+                </div>
+            </div>
+
+            <!-- DrugDiff -->
+            <div class="paper-section" id="paper-4">
+                <div class="paper-header">
+                    <h2>💊 DrugDiff: 扩散模型的分子生成新范式</h2>
+                    <div class="meta">
+                        <div class="meta-item">📄 bioRxiv / Nature (2026)</div>
+                        <div class="meta-item">🏷️ #mol-design</div>
+                        <div class="meta-item"><span class="difficulty">⭐⭐⭐ 中等</span></div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">2 min</span> 背景：为什么扩散模型？</h3>
+                    <div class="content-box">
+                        <p><strong>观察：</strong>扩散模型在图像生成中大成功（Stable Diffusion、DALL-E）。</p>
+                        <p><strong>问题：</strong>能否用于分子生成？关键挑战是什么？</p>
+                    </div>
+                    <div class="key-points">
+                        <ul>
+                            <li>图像：像素空间连续，易于扩散</li>
+                            <li>分子：离散图结构，扩散困难</li>
+                            <li>需要创新的扩散机制</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">6 min</span> 核心方案：潜在空间扩散 + 灵活引导</h3>
+                    <div class="content-box">
+                        <p><strong>三步走：</strong></p>
+                    </div>
+                    <div class="slide-example">
+                        步骤 1：编码
+                        分子 → 连续潜在向量
+                        （用变分自编码器编码分子的本质特征）
+
+                        步骤 2：扩散
+                        潜在向量 + 高斯噪声 → 逐步去噪
+                        ├─ 基础去噪：无条件
+                        └─ 引导去噪：用性质预测器引导
+                        （让去噪过程朝目标性质优化）
+
+                        步骤 3：解码
+                        去噪后的潜在向量 → 分子结构
+                    </div>
+                    <div class="key-points">
+                        <ul>
+                            <li><strong>潜在空间扩散：</strong>连续空间更适合扩散</li>
+                            <li><strong>灵活引导：</strong>不是硬约束，而是软引导</li>
+                            <li><strong>多目标：</strong>可同时优化活性、ADME、合成性</li>
+                            <li><strong>多样性：</strong>扩散模型天生多样，不像 GAN 模式塌缩</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">3 min</span> 结果展示</h3>
+                    <div class="content-box">
+                        <p><strong>定量结果：</strong></p>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>指标</th>
+                            <th>数值</th>
+                            <th>含义</th>
+                        </tr>
+                        <tr>
+                            <td>生成有效性</td>
+                            <td>94%</td>
+                            <td>高成功率</td>
+                        </tr>
+                        <tr>
+                            <td>性质控制精度</td>
+                            <td>R²=0.92</td>
+                            <td>精准达成目标</td>
+                        </tr>
+                        <tr>
+                            <td>多样性指标</td>
+                            <td>0.81</td>
+                            <td>足够丰富</td>
+                        </tr>
+                        <tr>
+                            <td>合成可行性</td>
+                            <td>75%</td>
+                            <td>可实验验证</td>
+                        </tr>
+                    </table>
+                    <div class="qa-box">
+                        <strong>💡 案例：</strong> 给定"高活性+低毒性+易合成"，模型生成 100 个候选，其中 75 个真的可以合成。
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3><span class="timer">2 min</span> 意义与前景</h3>
+                    <div class="key-points">
+                        <ul>
+                            <li>✓ <strong>范式更新：</strong>从 VAE/GAN → 扩散模型</li>
+                            <li>✓ <strong>多性质权衡：</strong>不用权重调整，直接引导</li>
+                            <li>✓ <strong>候选库生成：</strong>快速生成数百候选供实验筛选</li>
+                            <li>✓ <strong>未来方向：</strong>与实验反馈循环协同进化</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommendation">
+                    <strong>✨ 为什么推荐这篇？</strong><br>
+                    代表 2026 年最新趋势。展示生成模型的未来方向。如果想讲前沿，这篇是不二选择。
+                </div>
+            </div>
+
+            <!-- 讲演技巧 -->
+            <div class="paper-section" id="paper-5">
+                <div class="paper-header">
+                    <h2>📋 15分钟文献汇报完整技巧</h2>
+                    <div class="meta">
+                        <div class="meta-item">💡 实战指南</div>
+                        <div class="meta-item">🎤 演讲技巧</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>时间分配秘诀</h3>
+                    <div class="slide-example">
+                        0:00-2:00 (2分钟) 开场：问题陈述
+                        ├─ 为什么这个问题重要？
+                        ├─ 现有方法的局限？
+                        └─ 吸引听众的兴趣
+
+                        2:00-9:00 (7分钟) 核心方案
+                        ├─ 主要思想是什么？
+                        ├─ 如何实现的？
+                        └─ 与传统方法的区别？
+
+                        9:00-13:00 (4分钟) 结果与验证
+                        ├─ 定量结果
+                        ├─ 对标对比
+                        └─ 案例演示
+
+                        13:00-15:00 (2分钟) 意义与展望
+                        ├─ 学术意义
+                        ├─ 应用前景
+                        └─ 感谢 & 问题
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>PPT 设计指南（5-6 张幻灯片）</h3>
+                    <div class="content-box">
+                        <p><strong>第 1 张：标题页</strong></p>
+                        <ul style="padding-left: 20px; margin-top: 10px;">
+                            <li>论文标题（大字体）</li>
+                            <li>期刊名与年份</li>
+                            <li>你的名字与报告时间</li>
+                        </ul>
+                    </div>
+                    <div class="content-box">
+                        <p><strong>第 2 张：问题与动机</strong></p>
+                        <ul style="padding-left: 20px; margin-top: 10px;">
+                            <li>标题：清晰描述问题</li>
+                            <li>2-3 个要点：为什么重要？</li>
+                            <li>1 张对比图：现状 vs 理想</li>
+                        </ul>
+                    </div>
+                    <div class="content-box">
+                        <p><strong>第 3 张：核心方法（最重要！）</strong></p>
+                        <ul style="padding-left: 20px; margin-top: 10px;">
+                            <li>流程图或框架图</li>
+                            <li>用颜色突出关键创新</li>
+                            <li>标注每一步的作用</li>
+                        </ul>
+                    </div>
+                    <div class="content-box">
+                        <p><strong>第 4 张：实验结果</strong></p>
+                        <ul style="padding-left: 20px; margin-top: 10px;">
+                            <li>对标表格或柱状图</li>
+                            <li>用颜色突出最优结果</li>
+                            <li>数字要大、清晰</li>
+                        </ul>
+                    </div>
+                    <div class="content-box">
+                        <p><strong>第 5 张：案例或应用</strong></p>
+                        <ul style="padding-left: 20px; margin-top: 10px;">
+                            <li>具体分子或数据的案例</li>
+                            <li>展示模型如何工作</li>
+                            <li>化学家最容易理解的形式</li>
+                        </ul>
+                    </div>
+                    <div class="content-box">
+                        <p><strong>第 6 张：意义与展望</strong></p>
+                        <ul style="padding-left: 20px; margin-top: 10px;">
+                            <li>3 个要点：学术 + 应用 + 未来</li>
+                            <li>为什么这项工作很酷？</li>
+                            <li>谢谢，准备好接受提问</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>演讲技巧</h3>
+                    <div class="tip-box">
+                        <strong>🎯 开场 (0-2 分钟)：</strong>
+                        <p style="margin-top: 8px;">不要说"这篇论文发表在..."，而是：</p>
+                        <p style="margin-top: 5px;"><em>"大家都知道 AI 模型精度高，但一个大问题是...（具体问题）。今天这篇论文提出一个优雅的解决方案。"</em></p>
+                    </div>
+                    <div class="tip-box">
+                        <strong>🎯 讲方法 (2-9 分钟)：</strong>
+                        <p style="margin-top: 8px;">• 先讲思想，再讲公式</p>
+                        <p>• 用比喻：如果可能，用生活中的类比</p>
+                        <p>• 逐步深入，不要一下子讲完</p>
+                    </div>
+                    <div class="tip-box">
+                        <strong>🎯 讲结果 (9-13 分钟)：</strong>
+                        <p style="margin-top: 8px;">• 用对比说话（我们 vs 别人）</p>
+                        <p>• 用数字说话（量化指标）</p>
+                        <p>• 用案例说话（具体分子或数据）</p>
+                    </div>
+                    <div class="tip-box">
+                        <strong>🎯 结尾 (13-15 分钟)：</strong>
+                        <p style="margin-top: 8px;">• 回顾一遍主要思想</p>
+                        <p>• 强调为什么这项工作很重要</p>
+                        <p>• 一句话总结，然后说"谢谢，等待提问"</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>预料的 Q&A</h3>
+                    <div class="qa-box">
+                        <p><strong>Q: "这个方法与 [另一个论文] 的区别是什么？"</strong></p>
+                        <p style="margin-top: 8px;"><em>A: 我们的创新在于...(说出 1-2 个具体差异)。这使得我们能够...</em></p>
+                    </div>
+                    <div class="qa-box">
+                        <p><strong>Q: "能不能在我的数据上用这个方法？"</strong></p>
+                        <p style="margin-top: 8px;"><em>A: 原文用的是 [数据类型]。理论上应该可以适配 [你的数据]，但需要...(诚实地说明可能的挑战)</em></p>
+                    </div>
+                    <div class="qa-box">
+                        <p><strong>Q: "计算成本/训练时间是多少？"</strong></p>
+                        <p style="margin-top: 8px;"><em>A: 论文中提到...。在 [硬件] 上需要 [时间]。相比传统方法快了 [倍数]。</em></p>
+                    </div>
+                    <div class="qa-box">
+                        <p><strong>Q: "有没有开源代码？"</strong></p>
+                        <p style="margin-top: 8px;"><em>A: 是的，在 [GitHub/代码库]。文档...（评价一下易用性）</em></p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>常见错误</h3>
+                    <div class="content-box">
+                        <p><strong>❌ 错误 1：念 PPT</strong></p>
+                        <p>应该：看著听众，用自己的话讲。PPT 只是提示。</p>
+                    </div>
+                    <div class="content-box">
+                        <p><strong>❌ 错误 2：讲太多细节</strong></p>
+                        <p>应该：15 分钟就讲核心思想，细节留给论文。</p>
+                    </div>
+                    <div class="content-box">
+                        <p><strong>❌ 错误 3：忘了讲实际应用</strong></p>
+                        <p>应该：时刻记住听众的问题："这对我有什么用？"</p>
+                    </div>
+                    <div class="content-box">
+                        <p><strong>❌ 错误 4：时间分配不当</strong></p>
+                        <p>应该：提前计时，在家讲一遍。确保在 15 分钟内讲完。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>🎤 15分钟文献汇报讲稿库 | AI4Chem 精选论文 | 2026年最新</p>
+            <p>提示：打印此页面或转换为 PDF，便于离线查看和演讲练习</p>
+        </footer>
+    </div>
+
+    <script>
+        function showPaper(index) {
+            // 隐藏所有 section
+            const sections = document.querySelectorAll('.paper-section');
+            sections.forEach(s => s.classList.remove('active'));
+
+            // 显示选中的 section
+            document.getElementById('paper-' + index).classList.add('active');
+
+            // 更新导航按钮
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // 滚回顶部
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
