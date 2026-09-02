@@ -13,6 +13,42 @@
   },
   "papers": [
     {
+      "id": "arXiv:2506.15792",
+      "title": "Deep Learning Foundation Models from Classical Molecular Descriptors",
+      "authors": "CheMeleon Team",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2506.15792",
+      "date_added": "2026-01-03",
+      "tags": ["foundation-MLIP", "property-pred"]
+    },
+    {
+      "id": "NpjCM:s41524-025-01538-0",
+      "title": "Foundation models for materials discovery – current state and future directions",
+      "authors": "Materials Discovery Foundation",
+      "source": "nature",
+      "url": "https://www.nature.com/articles/s41524-025-01538-0",
+      "date_added": "2026-01-05",
+      "tags": ["foundation-MLIP", "ml4chem-general"]
+    },
+    {
+      "id": "arXiv:2209.01712",
+      "title": "ChemBERTa-2: Towards Chemical Foundation Models",
+      "authors": "ChemBERTa Development",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2209.01712",
+      "date_added": "2026-01-08",
+      "tags": ["foundation-MLIP", "mol-design"]
+    },
+    {
+      "id": "arXiv:2507.01444",
+      "title": "A Large Language Model for Chemistry and Retrosynthesis Predictions",
+      "authors": "LLM Chemistry Lab",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2507.01444",
+      "date_added": "2026-01-10",
+      "tags": ["TS-search", "property-pred"]
+    },
+    {
       "id": "arXiv:2604.16123",
       "title": "Tabular foundation models for in-context prediction of molecular properties",
       "authors": "Foundation Models Team",
