@@ -13,6 +13,213 @@
   },
   "papers": [
     {
+      "id": "arXiv:2604.16123",
+      "title": "Tabular foundation models for in-context prediction of molecular properties",
+      "authors": "Foundation Models Team",
+      "source": "arxiv",
+      "url": "https://arxiv.org/html/2604.16123v2",
+      "date_added": "2026-07-01",
+      "tags": ["foundation-MLIP", "property-pred"]
+    },
+    {
+      "id": "arXiv:2604.16586",
+      "title": "A Systematic Survey and Benchmark of Deep Learning for Molecular Property Prediction in the Foundation Model Era",
+      "authors": "Survey Consortium",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2604.16586",
+      "date_added": "2026-07-02",
+      "tags": ["property-pred", "foundation-MLIP"]
+    },
+    {
+      "id": "arXiv:2505.15116",
+      "title": "Graph Foundation Models: A Comprehensive Survey",
+      "authors": "Graph ML Lab",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2505.15116",
+      "date_added": "2026-07-03",
+      "tags": ["foundation-MLIP", "ml4chem-general"]
+    },
+    {
+      "id": "arXiv:2508.20527",
+      "title": "Molecular Machine Learning in Chemical Process Design",
+      "authors": "Process Chemistry ML Lab",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2508.20527",
+      "date_added": "2026-07-05",
+      "tags": ["reaction-opt", "ml4chem-general"]
+    },
+    {
+      "id": "arXiv:2503.10538",
+      "title": "Foundation Models for Atomistic Simulation of Chemistry and Materials",
+      "authors": "Atomistic Simulation Group",
+      "source": "arxiv",
+      "url": "https://arxiv.org/html/2503.10538v1",
+      "date_added": "2026-07-07",
+      "tags": ["foundation-MLIP", "property-pred"]
+    },
+    {
+      "id": "arXiv:2606.07327",
+      "title": "Six Open Questions in Machine-Learned Interatomic Potential Foundation Models",
+      "authors": "MLIP Open Challenges Group",
+      "source": "arxiv",
+      "url": "https://arxiv.org/html/2606.07327v2",
+      "date_added": "2026-07-08",
+      "tags": ["foundation-MLIP"]
+    },
+    {
+      "id": "arXiv:2602.16684",
+      "title": "Retrieval-Augmented Foundation Models for Matched Molecular Pair Transformations to Recapitulate Medicinal Chemistry Intuition",
+      "authors": "MMPT-RAG Team",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2602.16684v1",
+      "date_added": "2026-07-10",
+      "tags": ["mol-design", "property-pred"]
+    },
+    {
+      "id": "arXiv:2607.18281",
+      "title": "Position: The Inevitable Transition to Machine Learning in Quantum Chemistry",
+      "authors": "Quantum Chemistry Leadership",
+      "source": "arxiv",
+      "url": "https://arxiv.org/html/2607.18281",
+      "date_added": "2026-07-11",
+      "tags": ["foundation-MLIP", "property-pred"]
+    },
+    {
+      "id": "arXiv:2406.14347",
+      "title": "∇²DFT: A Universal Quantum Chemistry Dataset of Drug-Like Molecules and a Benchmark for Neural Network Potentials",
+      "authors": "Universal Dataset Initiative",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2406.14347",
+      "date_added": "2026-07-14",
+      "tags": ["foundation-MLIP", "property-pred"]
+    },
+    {
+      "id": "ChemRxiv:6913ac95",
+      "title": "Machine-Learning Adaptivity, DFT-Level Accuracy, and Semi-Empirical Quantum-Chemistry Speed with Neural-Network Extended Tight-Binding",
+      "authors": "NN-xTB Development Team",
+      "source": "chemrxiv",
+      "url": "https://www.cambridge.org/engage/chemrxiv/article-details/6913ac95ef936fb4a2a8ec31",
+      "date_added": "2026-07-15",
+      "tags": ["foundation-MLIP"]
+    },
+    {
+      "id": "arXiv:2604.12237",
+      "title": "MolMem: Memory-Augmented Agentic Reinforcement Learning for Sample-Efficient Molecular Optimization",
+      "authors": "Memory-Augmented RL Lab",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2604.12237",
+      "date_added": "2026-07-17",
+      "tags": ["mol-design", "reaction-opt"]
+    },
+    {
+      "id": "JCIM:5146205",
+      "title": "A Reinforcement Learning-Guided Genetic Algorithm Integrating Medicinal Chemistry-Inspired Molecular Transformations",
+      "authors": "ALCHIMIA Research Group",
+      "source": "acs",
+      "url": "https://pubs.acs.org/jcisd8/article/66/8/4576/5146205/A-Reinforcement-Learning-Guided-Genetic-Algorithm",
+      "date_added": "2026-07-18",
+      "tags": ["mol-design"]
+    },
+    {
+      "id": "arXiv:2509.21737",
+      "title": "POLO: Preference-Guided Multi-Turn Reinforcement Learning for Lead Optimization",
+      "authors": "Lead Optimization RL Team",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2509.21737",
+      "date_added": "2026-07-20",
+      "tags": ["mol-design", "property-pred"]
+    },
+    {
+      "id": "arXiv:2604.23061",
+      "title": "C-MORAL: Controllable Multi-Objective Molecular Optimization with Reinforcement Alignment for LLMs",
+      "authors": "LLM-Molecular Optimization Team",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2604.23061",
+      "date_added": "2026-07-21",
+      "tags": ["mol-design"]
+    },
+    {
+      "id": "JCTC:5149862",
+      "title": "Quantum Chemistry-Driven Molecular Inverse Design of Stable Isomers with Data-Free Reinforcement Learning",
+      "authors": "QC-Driven Design Lab",
+      "source": "acs",
+      "url": "https://pubs.acs.org/jctcce/article/22/7/3373/5149862/Quantum-Chemistry-Driven-Molecular-Inverse-Design",
+      "date_added": "2026-07-22",
+      "tags": ["mol-design", "foundation-MLIP"]
+    },
+    {
+      "id": "arXiv:2510.15939",
+      "title": "Hallucinations in AlphaFold3 for Intrinsically Disordered Proteins with disorder in Biological Process Residues",
+      "authors": "AlphaFold Analysis Group",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2510.15939",
+      "date_added": "2026-07-24",
+      "tags": ["property-pred", "ml4chem-general"]
+    },
+    {
+      "id": "arXiv:2507.19805",
+      "title": "Sequence-based protein-protein interaction prediction and its applications in drug discovery",
+      "authors": "PPI Prediction Team",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2507.19805",
+      "date_added": "2026-07-26",
+      "tags": ["property-pred", "catalyst-ligand"]
+    },
+    {
+      "id": "arXiv:2512.11105",
+      "title": "Supporting Medicinal Chemists in Iterative Hypothesis Generation for Drug Target Identification",
+      "authors": "Medicinal Chemistry AI Lab",
+      "source": "arxiv",
+      "url": "https://arxiv.org/pdf/2512.11105",
+      "date_added": "2026-07-27",
+      "tags": ["property-pred", "ml4chem-general"]
+    },
+    {
+      "id": "MC:s12293-024-00423-5",
+      "title": "ResGAT: Residual Graph Attention Networks for molecular property prediction",
+      "authors": "ResGAT Team",
+      "source": "science",
+      "url": "https://link.springer.com/article/10.1007/s12293-024-00423-5",
+      "date_added": "2026-07-28",
+      "tags": ["property-pred"]
+    },
+    {
+      "id": "ACS:5141511",
+      "title": "Graph Attention Networks for Accurate and Explainable Prediction of CO2 Solubility in Diverse Physical Solvents",
+      "authors": "Solubility Prediction Lab",
+      "source": "acs",
+      "url": "https://pubs.acs.org/pcrhej/article/4/4/428/5141511/Graph-Attention-Networks-for-Accurate-and",
+      "date_added": "2026-07-29",
+      "tags": ["property-pred"]
+    },
+    {
+      "id": "DOI:10.1016/j.compchemeng.2026.00481",
+      "title": "TKAMAGN: A molecular property prediction graph neural network combining attention mechanism and Kolmogorov-Arnold network",
+      "authors": "KAN-Molecular Team",
+      "source": "science",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S100184172600481X",
+      "date_added": "2026-07-30",
+      "tags": ["property-pred"]
+    },
+    {
+      "id": "JACS:5c22620",
+      "title": "FragNet: A Graph Neural Network for Molecular Property Prediction with Four Levels of Interpretability",
+      "authors": "FragNet Development Team",
+      "source": "acs",
+      "url": "https://pubs.acs.org/doi/10.1021/jacs.5c22620",
+      "date_added": "2026-07-30",
+      "tags": ["property-pred"]
+    },
+    {
+      "id": "NatMI:s42256-025-01087-7",
+      "title": "Kolmogorov-Arnold Graph Neural Networks for Molecular Property Prediction",
+      "authors": "KA-GNN Team",
+      "source": "nature",
+      "url": "https://www.nature.com/articles/s42256-025-01087-7",
+      "date_added": "2026-07-31",
+      "tags": ["property-pred", "foundation-MLIP"]
+    },
+    {
       "id": "arXiv:1901.06594",
       "title": "Molecular Force Fields with Gradient-Domain Machine Learning: Construction and Application to Dynamics of Small Molecules with Coupled Cluster Forces",
       "authors": "Gilmer et al.",
