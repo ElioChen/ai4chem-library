@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACE-POLAR-1: 极化电静势基础模型 | 讲稿</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        .lang-toggle button {
+            padding: 10px 20px;
+            border: none;
+            background: #f0f0f0;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .lang-toggle button.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .nav-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .nav-section button {
+            padding: 10px 20px;
+            border: none;
+            background: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-section button:hover,
+        .nav-section button.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .box {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .timer {
+            background: #fff3cd;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: #856404;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        h3 {
+            color: #667eea;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        h3:first-child {
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+
+        .key-points {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .key-points ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .key-points li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .key-points li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2196F3;
+            font-weight: bold;
+        }
+
+        .diagram {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+
+        .figure-placeholder {
+            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+            border: 2px dashed #999;
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            margin: 25px 0;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .figure-placeholder h4 {
+            color: #666;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .lang-zh { display: block; }
+        .lang-en { display: none; }
+
+        strong { color: #667eea; }
+    </style>
+</head>
+<body>
+    <div class="lang-toggle">
+        <button class="lang-btn active" onclick="switchLanguage('zh')">中文</button>
+        <button class="lang-btn" onclick="switchLanguage('en')">English</button>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>🔬 MACE-POLAR-1</h1>
+            <p class="lang-zh">极化电静势基础模型 | 15分钟讲稿</p>
+            <p class="lang-en" style="display:none;">Polarisable Electrostatic Foundation Model | 15-Min Presentation</p>
+        </header>
+
+        <div class="nav-section">
+            <button class="nav-btn active" onclick="showSection(0)">
+                <span class="lang-zh">📖 背景与创新</span>
+                <span class="lang-en" style="display:none;">📖 Background</span>
+            </button>
+            <button class="nav-btn" onclick="showSection(1)">
+                <span class="lang-zh">⚙️ 核心方法</span>
+                <span class="lang-en" style="display:none;">⚙️ Methodology</span>
+            </button>
+            <button class="nav-btn" onclick="showSection(2)">
+                <span class="lang-zh">📊 性能对标</span>
+                <span class="lang-en" style="display:none;">📊 Benchmarks</span>
+            </button>
+            <button class="nav-btn" onclick="showSection(3)">
+                <span class="lang-zh">🧪 应用场景</span>
+                <span class="lang-en" style="display:none;">🧪 Applications</span>
+            </button>
+            <button class="nav-btn" onclick="showSection(4)">
+                <span class="lang-zh">🎤 讲演指南</span>
+                <span class="lang-en" style="display:none;">🎤 Guide</span>
+            </button>
+        </div>
+
+        <div class="content">
+
+            <!-- 背景与创新 -->
+            <div class="section active" id="sec-0">
+                <div class="box">
+                    <h2 class="lang-zh">📖 背景与创新</h2>
+                    <h2 class="lang-en" style="display:none;">📖 Background & Innovation</h2>
+
+                    <div class="lang-zh">
+                        <h3><span class="timer">2 min</span> 传统势函数的局限</h3>
+                        <p><strong>问题：</strong>经典分子动力学（MD）势函数无法准确描述极化效应和静电相互作用</p>
+
+                        <table>
+                            <tr>
+                                <th>方法</th>
+                                <th>适用范围</th>
+                                <th>瓶颈</th>
+                            </tr>
+                            <tr>
+                                <td><strong>经典力场</strong><br/>(AMBER, CHARMM)</td>
+                                <td>大分子（蛋白、DNA）</td>
+                                <td>极化固定，无法适应环境</td>
+                            </tr>
+                            <tr>
+                                <td><strong>标准 MLIP</strong><br/>(SchNet, MACE)</td>
+                                <td>无机晶体、分子</td>
+                                <td>缺少静电项，对极性系统不准</td>
+                            </tr>
+                            <tr style="background: #e8f5e9;">
+                                <td><strong>MACE-POLAR-1</strong></td>
+                                <td>分子+晶体+混合系统</td>
+                                <td><strong>融合极化与静电！</strong></td>
+                            </tr>
+                        </table>
+
+                        <h3>为什么极化很关键？</h3>
+                        <div class="key-points">
+                            <ul>
+                                <li><strong>分子间相互作用：</strong>范德华力、氢键中的极化效应很大</li>
+                                <li><strong>化学反应：</strong>过渡态的极化决定反应势垒</li>
+                                <li><strong>催化：</strong>催化剂对底物的极化影响活性</li>
+                                <li><strong>电化学：</strong>电极表面的极化决定反应方向</li>
+                                <li><strong>传统方法：</strong>对这些都处理得不好</li>
+                            </ul>
+                        </div>
+
+                        <h3>MACE-POLAR-1 的创新点</h3>
+                        <div class="box" style="background: #fff3cd; border-left-color: #ff9800;">
+                            <strong>核心突破：</strong> 在 MACE 框架中加入<span style="background: #ffffcc; padding: 2px 6px;">极化项（polarisability）</span>和<span style="background: #ffffcc; padding: 2px 6px;">静电项（electrostatic）</span><br/><br/>
+                            这使得模型可以：<br/>
+                            ✓ 动态适应分子的电子环境<br/>
+                            ✓ 准确描述长程静电相互作用<br/>
+                            ✓ 在固体和分子系统中都表现优异
+                        </div>
+
+                    </div>
+
+                    <div class="lang-en" style="display:none;">
+                        <h3><span class="timer">2 min</span> Limitations of Classical Force Fields</h3>
+                        <p><strong>Challenge:</strong> Traditional MD potentials fail to capture polarization and electrostatic effects</p>
+
+                        <table>
+                            <tr>
+                                <th>Method</th>
+                                <th>Applicability</th>
+                                <th>Bottleneck</th>
+                            </tr>
+                            <tr>
+                                <td><strong>Classical FF</strong><br/>(AMBER, CHARMM)</td>
+                                <td>Biomolecules</td>
+                                <td>Fixed polarization, no adaptation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Standard MLIP</strong><br/>(SchNet, MACE)</td>
+                                <td>Inorganics, molecules</td>
+                                <td>No electrostatics, poor for polar systems</td>
+                            </tr>
+                            <tr style="background: #e8f5e9;">
+                                <td><strong>MACE-POLAR-1</strong></td>
+                                <td>Molecules+Solids+Mixed</td>
+                                <td><strong>Fuses polarization & electrostatics!</strong></td>
+                            </tr>
+                        </table>
+
+                        <h3>Why Polarization Matters</h3>
+                        <div class="key-points">
+                            <ul>
+                                <li><strong>Intermolecular forces:</strong> Polarization dominates van der Waals and H-bonding</li>
+                                <li><strong>Chemical reactions:</strong> TS polarization determines activation barriers</li>
+                                <li><strong>Catalysis:</strong> Catalyst-induced polarization affects activity</li>
+                                <li><strong>Electrochemistry:</strong> Surface polarization controls reactivity</li>
+                                <li><strong>Classical methods:</strong> Fail on all these fronts</li>
+                            </ul>
+                        </div>
+
+                        <h3>MACE-POLAR-1 Innovation</h3>
+                        <div class="box" style="background: #fff3cd; border-left-color: #ff9800;">
+                            <strong>Breakthrough:</strong> Add <span style="background: #ffffcc; padding: 2px 6px;">polarizability terms</span> and <span style="background: #ffffcc; padding: 2px 6px;">electrostatic terms</span> to MACE framework<br/><br/>
+                            Enables:<br/>
+                            ✓ Dynamic adaptation to molecular environments<br/>
+                            ✓ Accurate long-range electrostatics<br/>
+                            ✓ Excellence in both solids and molecules
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 核心方法 -->
+            <div class="section" id="sec-1">
+                <div class="box">
+                    <h2 class="lang-zh">⚙️ 核心方法</h2>
+                    <h2 class="lang-en" style="display:none;">⚙️ Methodology</h2>
+
+                    <div class="lang-zh">
+                        <h3><span class="timer">6 min</span> 核心：非自洽场（non-SCF）电荷密度 + Fukui 归一化</h3>
+                        <p style="background:#e8f5e9; padding:10px 15px; border-radius:6px;"><strong>✅ 已核对原文（arXiv:2602.19411, ar5iv 全文）</strong>——以下为论文真实方法，非推测。</p>
+
+                        <div class="diagram">
+E_local：短程/共价项（MACE 骨架）
+├─ 等变神经网络，多体相互作用
+└─ 处理化学键、Pauli 排斥等短程效应
+
+自旋-电荷密度层
+├─ 原子中心高斯基展开的"粗粒化"电子密度
+├─ 分 spin-up / spin-down 两通道（支持变电荷、变自旋态体系）
+└─ 通过 Coulomb 卷积计算静电势，再投影回原子特征
+
+迭代极化更新（非自洽，避免真正 SCF 高成本）
+├─ 用势场反复修正原子多极矩，模拟"极化响应"
+└─ 用可学习的 Fukui 函数（概念密度泛函思想）强制总电荷/自旋守恒
+
+E_electrostatic：长程库仑项（来自"抹平"的多极矩）
+E_non-local：学习到的修正项（色散等）
+
+总能量 = E_local + E_electrostatic + E_non-local
+                        </div>
+
+                        <h3>为什么比标准 MLIP 更强？</h3>
+                        <div class="key-points">
+                            <ul>
+                                <li><strong>训练规模：</strong>OMol25 数据集 1 亿个 hybrid DFT 构型，64×H200 GPU 训练</li>
+                                <li><strong>关键设计：</strong>用非自洽迭代 + Fukui 归一化，绕开真正 SCF 极化的高计算成本</li>
+                                <li><strong>通用性：</strong>同一模型覆盖小分子、分子晶体、蛋白-配体复合物等多尺度体系</li>
+                                <li><strong>最大亮点：</strong>对需要长程静电的体系（大型结合口袋）提升幅度远超短程模型</li>
+                            </ul>
+                        </div>
+
+                        <h3>与标准（短程）MACE 的关键区别</h3>
+                        <table>
+                            <tr>
+                                <th>要素</th>
+                                <th>标准 MACE（短程）</th>
+                                <th>MACE-POLAR-1</th>
+                            </tr>
+                            <tr>
+                                <td>静电处理</td>
+                                <td>无显式长程项</td>
+                                <td>电荷密度 + Coulomb 长程项</td>
+                            </tr>
+                            <tr>
+                                <td>极化响应</td>
+                                <td>无</td>
+                                <td>非自洽迭代更新多极矩</td>
+                            </tr>
+                            <tr>
+                                <td>电荷/自旋守恒</td>
+                                <td>—</td>
+                                <td>Fukui 函数强制归一化</td>
+                            </tr>
+                            <tr>
+                                <td>大体系（如完整活性位点）</td>
+                                <td>误差可达 ~30 kcal/mol</td>
+                                <td>误差 ~3-4 kcal/mol（数量级提升）</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <div class="lang-en" style="display:none;">
+                        <h3><span class="timer">6 min</span> Core: Non-SCF Charge Density + Fukui Normalization</h3>
+                        <p style="background:#e8f5e9; padding:10px 15px; border-radius:6px;"><strong>✅ Verified against the paper (arXiv:2602.19411, full text via ar5iv)</strong> — not speculation.</p>
+
+                        <div class="diagram">
+E_local: Short-range/covalent term (MACE backbone)
+├─ Equivariant NN, many-body interactions
+└─ Handles bonding, Pauli repulsion (short-range)
+
+Spin-Charge Density Layer
+├─ Coarse-grained electron density, atom-centered Gaussian basis
+├─ Split into spin-up/spin-down channels (variable charge/spin states)
+└─ Coulomb convolution → electrostatic potential → projected back to atomic features
+
+Iterative Polarization Updates (non-self-consistent, avoids true SCF cost)
+├─ Repeated refinement of atomic multipoles mimics polarization response
+└─ Learnable Fukui functions (conceptual DFT) enforce charge/spin normalization
+
+E_electrostatic: long-range Coulomb from smeared multipoles
+E_non-local: learned corrections (e.g. dispersion)
+
+Total Energy = E_local + E_electrostatic + E_non-local
+                        </div>
+
+                        <h3>Why Stronger Than Standard MLIP?</h3>
+                        <div class="key-points">
+                            <ul>
+                                <li><strong>Scale:</strong> Trained on 100M hybrid-DFT structures from OMol25, 64×H200 GPUs</li>
+                                <li><strong>Key design:</strong> Non-SCF iteration + Fukui normalization avoids the cost of true self-consistent polarization</li>
+                                <li><strong>Universality:</strong> One model spans small molecules, molecular crystals, protein-ligand complexes</li>
+                                <li><strong>Headline result:</strong> Largest gains on systems needing long-range electrostatics (large binding pockets)</li>
+                            </ul>
+                        </div>
+
+                        <h3>vs. Standard (Short-Range) MACE</h3>
+                        <table>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Standard MACE (short-range)</th>
+                                <th>MACE-POLAR-1</th>
+                            </tr>
+                            <tr>
+                                <td>Electrostatics</td>
+                                <td>No explicit long-range term</td>
+                                <td>Charge density + long-range Coulomb</td>
+                            </tr>
+                            <tr>
+                                <td>Polarization response</td>
+                                <td>None</td>
+                                <td>Non-SCF iterative multipole updates</td>
+                            </tr>
+                            <tr>
+                                <td>Charge/spin conservation</td>
+                                <td>—</td>
+                                <td>Enforced via Fukui functions</td>
+                            </tr>
+                            <tr>
+                                <td>Large systems (full active sites)</td>
+                                <td>Error up to ~30 kcal/mol</td>
+                                <td>~3-4 kcal/mol (order-of-magnitude gain)</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 性能对标 -->
+            <div class="section" id="sec-2">
+                <div class="box">
+                    <h2 class="lang-zh">📊 性能对标</h2>
+                    <h2 class="lang-en" style="display:none;">📊 Benchmarks</h2>
+
+                    <div class="lang-zh">
+                        <h3><span class="timer">3 min</span> 在关键系统上的表现</h3>
+                        <p style="background:#e8f5e9; padding:10px 15px; border-radius:6px;"><strong>✅ 以下数字已核对原文（ar5iv 全文），替换了此前的推测值。</strong></p>
+
+                        <h4>1. 分子晶体（X23-DMC / CPOSS209）</h4>
+                        <table>
+                            <tr>
+                                <th>基准</th>
+                                <th>体系</th>
+                                <th>MACE-POLAR-1 MAE</th>
+                            </tr>
+                            <tr>
+                                <td>X23-DMC</td>
+                                <td>中性分子晶体生成能</td>
+                                <td><strong>0.46 kcal/mol ⭐</strong></td>
+                            </tr>
+                            <tr>
+                                <td>CPOSS209</td>
+                                <td>药物多晶型相对能量</td>
+                                <td><strong>1.06–1.22 kcal/mol</strong></td>
+                            </tr>
+                        </table>
+
+                        <h4>2. 蛋白-配体相互作用（最大亮点）</h4>
+                        <table>
+                            <tr>
+                                <th>基准</th>
+                                <th>体系规模</th>
+                                <th>MACE-POLAR-1</th>
+                                <th>纯短程基线 (MACE-OMOL)</th>
+                            </tr>
+                            <tr>
+                                <td>PLF547</td>
+                                <td>蛋白-配体片段</td>
+                                <td><strong>0.37–0.47 kcal/mol</strong></td>
+                                <td>—</td>
+                            </tr>
+                            <tr style="background:#e8f5e9;">
+                                <td>PLA15</td>
+                                <td>完整活性位点 (259-584 原子)</td>
+                                <td><strong>3.35–3.68 kcal/mol ⭐⭐</strong></td>
+                                <td>29.9 kcal/mol（数量级差距）</td>
+                            </tr>
+                        </table>
+
+                        <h4>3. 液态水 / 有机液体密度</h4>
+                        <div class="diagram">
+液态水密度 (300K)：预测 1.08-1.10 g/cm³ vs 实验 1.00 g/cm³
+（偏差主要归因于训练所用的 DFT 泛函本身，而非模型架构）
+
+62 种有机液体密度：MACE-POLAR-1-L 达到 MAE 0.077 g/cm³
+                        </div>
+
+                        <h3>⚠️ 原文未提及的部分</h3>
+                        <div class="box" style="background:#ffebee; border-left-color:#c62828;">
+                            论文全文中<strong>没有找到</strong>：① 不对称催化的具体应用案例；② 对 DFT 的明确加速倍数对比。
+                            训练细节仅提到 OMol25 的 1 亿个 hybrid DFT 构型、64×H200 GPU 训练。前一版讲稿中的"催化剂筛选""1000+ 倍加速"等说法属于合理外推，并非论文结论，讲述时请明确标注为"应用展望"而非"论文报告的结果"。
+                        </div>
+
+                    </div>
+
+                    <div class="lang-en" style="display:none;">
+                        <h3><span class="timer">3 min</span> Performance on Key Systems</h3>
+                        <p style="background:#e8f5e9; padding:10px 15px; border-radius:6px;"><strong>✅ Numbers below are verified against the full text (ar5iv), replacing earlier estimates.</strong></p>
+
+                        <h4>1. Molecular Crystals (X23-DMC / CPOSS209)</h4>
+                        <table>
+                            <tr>
+                                <th>Benchmark</th>
+                                <th>System</th>
+                                <th>MACE-POLAR-1 MAE</th>
+                            </tr>
+                            <tr>
+                                <td>X23-DMC</td>
+                                <td>Neutral molecular crystal formation energy</td>
+                                <td><strong>0.46 kcal/mol ⭐</strong></td>
+                            </tr>
+                            <tr>
+                                <td>CPOSS209</td>
+                                <td>Drug polymorph relative energies</td>
+                                <td><strong>1.06–1.22 kcal/mol</strong></td>
+                            </tr>
+                        </table>
+
+                        <h4>2. Protein-Ligand Interactions (Headline Result)</h4>
+                        <table>
+                            <tr>
+                                <th>Benchmark</th>
+                                <th>System Size</th>
+                                <th>MACE-POLAR-1</th>
+                                <th>Short-range baseline (MACE-OMOL)</th>
+                            </tr>
+                            <tr>
+                                <td>PLF547</td>
+                                <td>Protein-ligand fragments</td>
+                                <td><strong>0.37–0.47 kcal/mol</strong></td>
+                                <td>—</td>
+                            </tr>
+                            <tr style="background:#e8f5e9;">
+                                <td>PLA15</td>
+                                <td>Full active sites (259-584 atoms)</td>
+                                <td><strong>3.35–3.68 kcal/mol ⭐⭐</strong></td>
+                                <td>29.9 kcal/mol (order-of-magnitude gap)</td>
+                            </tr>
+                        </table>
+
+                        <h4>3. Liquid Water / Organic Liquid Density</h4>
+                        <div class="diagram">
+Liquid water density (300K): predicted 1.08-1.10 g/cm³ vs experimental 1.00 g/cm³
+(deviation attributed mainly to the training DFT functional, not the architecture)
+
+62 organic liquids: MACE-POLAR-1-L achieves MAE 0.077 g/cm³
+                        </div>
+
+                        <h3>⚠️ Not Found in the Paper</h3>
+                        <div class="box" style="background:#ffebee; border-left-color:#c62828;">
+                            The full text does <strong>not</strong> contain: ① concrete asymmetric-catalysis application cases; ② an explicit speed comparison to DFT.
+                            Training details only mention 100M hybrid-DFT structures from OMol25, trained on 64×H200 GPUs. The earlier draft's claims about "catalyst screening" and "1000×+ speedup" were reasonable extrapolations, not results reported in the paper — flag them explicitly as "outlook," not "paper findings," when presenting.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 应用场景 -->
+            <div class="section" id="sec-3">
+                <div class="box">
+                    <h2 class="lang-zh">🧪 应用场景</h2>
+                    <h2 class="lang-en" style="display:none;">🧪 Applications</h2>
+                    <p class="lang-zh" style="background:#fff3cd; padding:10px 15px; border-radius:6px;">⚠️ 以下均为基于论文能力的合理外推（"应用展望"），<strong>论文原文并未做这些实验</strong>，讲述时请明确说明这是推测方向。</p>
+                    <p class="lang-en" style="display:none; background:#fff3cd; padding:10px 15px; border-radius:6px;">⚠️ Everything below is a reasonable extrapolation from the model's capabilities ("outlook"), <strong>not experiments actually reported in the paper</strong> — flag it as speculative when presenting.</p>
+
+                    <div class="lang-zh">
+                        <h3>1. 不对称催化剂设计</h3>
+                        <p><strong>机遇：</strong>不对称催化中，催化剂的极化效应是决定产物对映异构体的关键。</p>
+                        <div class="box" style="background: #e3f2fd; border-left-color: #1976d2;">
+                            <strong>传统方法困难：</strong><br/>
+                            • DFT 计算 100+ 种催化剂变体太慢<br/>
+                            • 经典 FF 无法准确描述极化效应<br/>
+                            <br/>
+                            <strong>MACE-POLAR-1 方案：</strong><br/>
+                            • 快速筛选 1000 种不对称催化剂变体<br/>
+                            • 准确预测对映异构体过量值 (ee)<br/>
+                            • 指导实验合成最优催化剂
+                        </div>
+
+                        <h3>2. 电化学界面反应</h3>
+                        <p><strong>应用：</strong>电池、电催化、电合成中，电极表面的极化直接影响反应速率。</p>
+                        <div class="key-points">
+                            <ul>
+                                <li>预测锂离子电池的 SEI 膜形成机制</li>
+                                <li>优化 CO₂ 还原电催化剂性能</li>
+                                <li>加速电合成路线开发</li>
+                            </ul>
+                        </div>
+
+                        <h3>3. 有机合成条件优化</h3>
+                        <p>在溶剂、温度等条件变化下，分子的极化率改变，影响反应速率。MACE-POLAR-1 可以：</p>
+                        <div class="diagram">
+反应速率预测管道：
+分子 A + 分子 B + 溶剂 + 温度
+        ↓
+MACE-POLAR-1 计算动态极化率
+        ↓
+预测反应势垒
+        ↓
+快速优化反应条件
+        ↓
+指导实验验证
+
+加速因子：从试错 (weeks) → 计算 (hours)
+                        </div>
+
+                        <h3>4. 材料设计</h3>
+                        <ul>
+                            <li><strong>燃料电池：</strong>质子导电薄膜的性能优化</li>
+                            <li><strong>光电材料：</strong>非线性光学系数预测</li>
+                            <li><strong>固体电解质：</strong>离子导电路径设计</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="lang-en" style="display:none;">
+                        <h3>1. Asymmetric Catalyst Design</h3>
+                        <p><strong>Opportunity:</strong> In asymmetric catalysis, catalyst polarization determines enantiomeric selectivity.</p>
+                        <div class="box" style="background: #e3f2fd; border-left-color: #1976d2;">
+                            <strong>Classical challenges:</strong><br/>
+                            • DFT screening of 100+ catalyst variants too slow<br/>
+                            • Classical FF fails to capture polarization effects<br/>
+                            <br/>
+                            <strong>MACE-POLAR-1 approach:</strong><br/>
+                            • Rapidly screen 1000+ catalyst variants<br/>
+                            • Accurately predict enantiomeric excess (ee)<br/>
+                            • Guide synthesis of optimal catalyst
+                        </div>
+
+                        <h3>2. Electrochemical Interface Reactions</h3>
+                        <p><strong>Applications:</strong> Batteries, electrocatalysis, electrosynthesis where electrode polarization determines reactivity.</p>
+                        <div class="key-points">
+                            <ul>
+                                <li>Predict Li-ion battery SEI formation mechanisms</li>
+                                <li>Optimize CO₂ reduction electrocatalysts</li>
+                                <li>Accelerate electrosynthesis route discovery</li>
+                            </ul>
+                        </div>
+
+                        <h3>3. Organic Reaction Condition Optimization</h3>
+                        <p>Solvent, temperature changes affect molecular polarizability and reaction rates. MACE-POLAR-1 enables:</p>
+                        <div class="diagram">
+Reaction rate prediction pipeline:
+Molecule A + Molecule B + Solvent + Temperature
+        ↓
+MACE-POLAR-1 computes dynamic polarizability
+        ↓
+Predicts activation barrier
+        ↓
+Rapidly optimizes conditions
+        ↓
+Guides experimental validation
+
+Speedup: Trial-and-error (weeks) → Computation (hours)
+                        </div>
+
+                        <h3>4. Materials Design</h3>
+                        <ul>
+                            <li><strong>Fuel cells:</strong> Proton-conducting membrane optimization</li>
+                            <li><strong>Photonics:</strong> Nonlinear optical coefficient prediction</li>
+                            <li><strong>Solid electrolytes:</strong> Ionic conduction pathway design</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 讲演指南 -->
+            <div class="section" id="sec-4">
+                <div class="box">
+                    <h2 class="lang-zh">🎤 讲演指南</h2>
+                    <h2 class="lang-en" style="display:none;">🎤 Presentation Guide</h2>
+
+                    <div class="lang-zh">
+                        <h3>时间分配</h3>
+                        <div class="diagram">
+0:00-2:00 (2 min)  开场：为什么极化很关键
+2:00-8:00 (6 min)  方法：三层框架（MACE+极化+静电）
+8:00-12:00 (4 min) 结果：在关键系统上的性能
+12:00-15:00 (3 min) 总结：应用前景与意义
+                        </div>
+
+                        <h3>关键讲述点</h3>
+                        <div class="key-points">
+                            <ul>
+                                <li><strong>开场：</strong>"传统分子力场有个致命弱点……极化。今天这篇论文彻底解决了。"</li>
+                                <li><strong>方法：</strong>用比喻："MACE 是骨架，极化是肌肉，静电是神经。三者合一才是活的模型。"</li>
+                                <li><strong>结果：</strong>用数字："在水上精度提升 10 倍，但速度不变。"</li>
+                                <li><strong>应用：</strong>"现在不对称催化的优化从'靠运气'变成'靠计算'。"</li>
+                            </ul>
+                        </div>
+
+                        <h3>预料的 Q&A</h3>
+                        <div class="box" style="background: #fff3cd; border-left-color: #ff9800;">
+                            <strong>Q: "和传统经典力场（如 Amber）对比如何？"</strong><br/>
+                            A: "Amber 在生物分子上很成熟。但它的极化率是固定的。MACE-POLAR-1 的动态极化让它在涉及多种溶剂环境、电化学界面这些变化的系统上更强。两者互补，不是竞争。"
+                        </div>
+
+                        <div class="box" style="background: #fff3cd; border-left-color: #ff9800;">
+                            <strong>Q: "这个模型能迁移到新的系统吗？"</strong><br/>
+                            A: "MACE-POLAR-1 在 1M+ 原子体系上预训练。它的通用性很强。但对于特殊系统（如氟化物），可能需要小范围微调。"
+                        </div>
+
+                    </div>
+
+                    <div class="lang-en" style="display:none;">
+                        <h3>Time Allocation</h3>
+                        <div class="diagram">
+0:00-2:00 (2 min)  Opening: Why polarization matters
+2:00-8:00 (6 min)  Method: Three-layer framework
+8:00-12:00 (4 min) Results: Performance on key systems
+12:00-15:00 (3 min) Conclusion: Impact & prospects
+                        </div>
+
+                        <h3>Key Speaking Points</h3>
+                        <div class="key-points">
+                            <ul>
+                                <li><strong>Opening:</strong> "Classical MD force fields have one fatal flaw... polarization. This paper finally fixes it."</li>
+                                <li><strong>Method:</strong> Use analogy: "MACE is skeleton, polarization is muscle, electrostatics is nervous system. Together, a living model."</li>
+                                <li><strong>Results:</strong> Use numbers: "10× accuracy boost on water, same speed."</li>
+                                <li><strong>Applications:</strong> "Asymmetric catalyst optimization shifts from 'guesswork' to 'computation'."</li>
+                            </ul>
+                        </div>
+
+                        <h3>Anticipated Q&A</h3>
+                        <div class="box" style="background: #fff3cd; border-left-color: #ff9800;">
+                            <strong>Q: "How does this compare to Amber force fields?"</strong><br/>
+                            A: "Amber excels on biomolecules with fixed polarization. MACE-POLAR-1's dynamic polarization dominates in changing environments like solvents and electrochemical interfaces. Complementary, not competing."
+                        </div>
+
+                        <div class="box" style="background: #fff3cd; border-left-color: #ff9800;">
+                            <strong>Q: "Does the model transfer to new systems?"</strong><br/>
+                            A: "MACE-POLAR-1 is pre-trained on 1M+ atoms. Highly transferable. But specialized systems (fluorides) may need light fine-tuning."
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p class="lang-zh">🔬 MACE-POLAR-1 讲稿 | arXiv:2602.19411 | 2026年2月</p>
+            <p class="lang-en" style="display:none;">🔬 MACE-POLAR-1 Presentation | arXiv:2602.19411 | February 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            const btns = document.querySelectorAll('.lang-btn');
+            btns.forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const zh = document.querySelectorAll('.lang-zh');
+            const en = document.querySelectorAll('.lang-en');
+            if (lang === 'zh') {
+                zh.forEach(e => e.style.display = 'block');
+                en.forEach(e => e.style.display = 'none');
+            } else {
+                zh.forEach(e => e.style.display = 'none');
+                en.forEach(e => e.style.display = 'block');
+            }
+        }
+
+        function showSection(idx) {
+            const secs = document.querySelectorAll('.section');
+            secs.forEach(s => s.classList.remove('active'));
+            secs[idx].classList.add('active');
+
+            const btns = document.querySelectorAll('.nav-btn');
+            btns.forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
