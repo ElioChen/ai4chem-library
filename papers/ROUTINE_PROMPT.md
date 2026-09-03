@@ -43,7 +43,12 @@
    **G. 反应路径与过渡态搜索**：
    - reaction pathway prediction, transition state search, retrosynthesis prediction,
      reaction mechanism ML, molecular dynamics machine learning,
-     reaction network generation, automated reaction discovery
+     reaction network generation, automated reaction discovery,
+     transition state energy prediction, activation energy prediction machine learning,
+     reaction barrier height prediction, delta-learning reaction barrier,
+     neural network potential transition state, machine learning nudged elastic band,
+     growing string method machine learning, reactive MLIP barrier,
+     transition state geometry prediction, kinetics prediction neural network
 
    **H. 大语言模型在化学中的应用（LLM+CHEM）**：
    - large language model chemistry, LLM for chemistry, chemical reasoning LLM,

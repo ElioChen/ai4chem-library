@@ -767,6 +767,87 @@
       "url": "https://arxiv.org/abs/2508.05427",
       "date_added": "2026-09-03",
       "tags": ["llm-chem"]
+    },
+    {
+      "id": "arXiv:2507.01793",
+      "title": "Machine learning prediction of a chemical reaction over 8 decades of energy",
+      "authors": "Multiple authors",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2507.01793",
+      "date_added": "2026-09-03",
+      "tags": ["TS-search", "property-pred"]
+    },
+    {
+      "id": "AdvSci:advs.202506240",
+      "title": "Harnessing Machine Learning to Enhance Transition State Search with Interatomic Potentials and Generative Models",
+      "authors": "Qiyuan Zhao, Yunhong Han, Duo Zhang, Jiaxu Wang, Peichen Zhong, et al.",
+      "source": "acs",
+      "url": "https://doi.org/10.1002/advs.202506240",
+      "date_added": "2026-09-03",
+      "tags": ["TS-search", "foundation-MLIP"]
+    },
+    {
+      "id": "JCTC:jctc.5c01047",
+      "title": "Accelerating Transition State Search and Ligand Screening for Organometallic Catalysis with Reactive Machine Learning Potential",
+      "authors": "Kun Tang, Yujing Zhao, Lei Zhang, Jian Du, Qingwei Meng, Qilei Liu",
+      "source": "acs",
+      "url": "https://doi.org/10.1021/acs.jctc.5c01047",
+      "date_added": "2026-09-03",
+      "tags": ["TS-search", "catalyst-ligand"]
+    },
+    {
+      "id": "DD:D5DD00240K",
+      "title": "Graph-based prediction of reaction barrier heights with on-the-fly prediction of transition states",
+      "authors": "Johannes Karwounopoulos, Jasper De Landsheere, Leonard Galustian, Tobias Jechtl, Esther Heid",
+      "source": "acs",
+      "url": "https://doi.org/10.1039/D5DD00240K",
+      "date_added": "2026-09-03",
+      "tags": ["TS-search", "reaction-opt"]
+    },
+    {
+      "id": "ChemCatalysis:checat.2025.101458",
+      "title": "Machine learning approaches for transition state prediction",
+      "authors": "Multiple authors",
+      "source": "acs",
+      "url": "https://doi.org/10.1016/j.checat.2025.101458",
+      "date_added": "2026-09-03",
+      "tags": ["TS-search", "ml4chem-general"]
+    },
+    {
+      "id": "WIREs:wcms.70025",
+      "title": "Machine Learning Transition State Geometries and Applications in Reaction Property Prediction",
+      "authors": "Isaac W. Beaglehole, Miles J. Pemberton, Elliot H. E. Farrar, Matthew N. Grayson",
+      "source": "acs",
+      "url": "https://doi.org/10.1002/wcms.70025",
+      "date_added": "2026-09-03",
+      "tags": ["TS-search", "ml4chem-general"]
+    },
+    {
+      "id": "arXiv:2512.14993",
+      "title": "Efficient Nudged Elastic Band Method using Neural Network Bayesian Algorithm Execution",
+      "authors": "Multiple authors",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2512.14993",
+      "date_added": "2026-09-03",
+      "tags": ["TS-search"]
+    },
+    {
+      "id": "NatComm:s41467-026-72945-0",
+      "title": "Reactive machine learning potential for accelerating transition state search in organic synthesis",
+      "authors": "Kaipai Ren, Kun Tang, Yujing Zhao, Lei Zhang, Jian Du",
+      "source": "nature",
+      "url": "https://www.nature.com/articles/s41467-026-72945-0",
+      "date_added": "2026-09-03",
+      "tags": ["TS-search", "reaction-opt"]
+    },
+    {
+      "id": "arXiv:2606.30778",
+      "title": "ReactionAtlas: Ab origine exploration of chemical reaction networks with machine learning",
+      "authors": "Multiple authors",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2606.30778",
+      "date_added": "2026-09-03",
+      "tags": ["TS-search", "ml4chem-general"]
     }
   ]
 }
