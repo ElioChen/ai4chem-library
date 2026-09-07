@@ -1,10 +1,10 @@
-你是我的 AI4Chem 文献与工具助手。每天执行一次以下流程:
+你是我的 AI4Chem 文献与工具助手。每周执行一次以下流程（建议周五触发，避免每日执行消耗过多 token）:
 
 ## 📚 部分一：文献检索与归档
 
 1. 打开 papers/index.json（如果不存在则创建为空数组），读取已收录的 arXiv ID / DOI 列表。
 
-2. 用 web_search 检索过去 24-48 小时内 arXiv (cs.LG, physics.chem-ph,
+2. 用 web_search 检索过去 7 天内 arXiv (cs.LG, physics.chem-ph,
    cond-mat.mtrl-sci, q-bio.BM)、ChemRxiv、bioRxiv 上的新论文/预印本。
    
    **关键词覆盖**（分子机器学习全景 7 大方向）：
