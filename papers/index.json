@@ -848,6 +848,42 @@
       "url": "https://arxiv.org/abs/2606.30778",
       "date_added": "2026-09-03",
       "tags": ["TS-search", "ml4chem-general"]
+    },
+    {
+      "id": "arXiv:2609.21536",
+      "title": "From sparse quantum-computing data to atomistic simulation with universal machine-learning interatomic potentials",
+      "authors": "Tuan Minh Do, Yuichiro Yoshida, Kenji Ishihara, Wataru Mizukami et al.",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2609.21536",
+      "date_added": "2026-10-08",
+      "tags": ["foundation-MLIP"]
+    },
+    {
+      "id": "arXiv:2609.13468",
+      "title": "Symmetry- and Property-Aware Crystal Generation with Reinforcement Learning for Inverse Materials Design",
+      "authors": "Ting-Wei Hsu, Arun Bansil, Qimin Yan",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2609.13468",
+      "date_added": "2026-10-08",
+      "tags": ["mol-design", "foundation-MLIP"]
+    },
+    {
+      "id": "arXiv:2609.25118",
+      "title": "Rachel: A general-purpose language model directs and revises retrosynthetic routes",
+      "authors": "Qisheng Li, Shunchao Jiang, Chen Qi, Xin Su, Da Han, Guangyong Chen",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2609.25118",
+      "date_added": "2026-10-08",
+      "tags": ["llm-chem", "TS-search"]
+    },
+    {
+      "id": "arXiv:2609.19837",
+      "title": "Machine Learning for High-Entropy Catalysts: Methods and Applications",
+      "authors": "Hao Chen, Zongrui Pei, Xianglin Liu",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2609.19837",
+      "date_added": "2026-10-08",
+      "tags": ["catalyst-ligand", "ml4chem-general"]
     }
   ]
 }
