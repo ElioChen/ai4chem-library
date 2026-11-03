@@ -19,7 +19,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2506.15792",
       "date_added": "2026-01-03",
-      "tags": ["foundation-MLIP", "property-pred"]
+      "tags": [
+        "foundation-MLIP",
+        "property-pred"
+      ]
     },
     {
       "id": "NpjCM:s41524-025-01538-0",
@@ -28,7 +31,10 @@
       "source": "nature",
       "url": "https://www.nature.com/articles/s41524-025-01538-0",
       "date_added": "2026-01-05",
-      "tags": ["foundation-MLIP", "ml4chem-general"]
+      "tags": [
+        "foundation-MLIP",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2209.01712",
@@ -37,7 +43,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2209.01712",
       "date_added": "2026-01-08",
-      "tags": ["foundation-MLIP", "mol-design"]
+      "tags": [
+        "foundation-MLIP",
+        "mol-design"
+      ]
     },
     {
       "id": "arXiv:2602.19411",
@@ -46,7 +55,11 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2602.19411",
       "date_added": "2026-02-15",
-      "tags": ["foundation-MLIP", "property-pred", "catalyst-ligand"]
+      "tags": [
+        "foundation-MLIP",
+        "property-pred",
+        "catalyst-ligand"
+      ]
     },
     {
       "id": "arXiv:2507.01444",
@@ -55,7 +68,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2507.01444",
       "date_added": "2026-01-10",
-      "tags": ["TS-search", "property-pred"]
+      "tags": [
+        "TS-search",
+        "property-pred"
+      ]
     },
     {
       "id": "arXiv:2604.16123",
@@ -64,7 +80,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/html/2604.16123v2",
       "date_added": "2026-07-01",
-      "tags": ["foundation-MLIP", "property-pred"]
+      "tags": [
+        "foundation-MLIP",
+        "property-pred"
+      ]
     },
     {
       "id": "arXiv:2604.16586",
@@ -73,7 +92,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2604.16586",
       "date_added": "2026-07-02",
-      "tags": ["property-pred", "foundation-MLIP"]
+      "tags": [
+        "property-pred",
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "arXiv:2505.15116",
@@ -82,7 +104,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2505.15116",
       "date_added": "2026-07-03",
-      "tags": ["foundation-MLIP", "ml4chem-general"]
+      "tags": [
+        "foundation-MLIP",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2508.20527",
@@ -91,7 +116,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2508.20527",
       "date_added": "2026-07-05",
-      "tags": ["reaction-opt", "ml4chem-general"]
+      "tags": [
+        "reaction-opt",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2503.10538",
@@ -100,7 +128,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/html/2503.10538v1",
       "date_added": "2026-07-07",
-      "tags": ["foundation-MLIP", "property-pred"]
+      "tags": [
+        "foundation-MLIP",
+        "property-pred"
+      ]
     },
     {
       "id": "arXiv:2606.07327",
@@ -109,7 +140,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/html/2606.07327v2",
       "date_added": "2026-07-08",
-      "tags": ["foundation-MLIP"]
+      "tags": [
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "arXiv:2602.16684",
@@ -118,7 +151,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2602.16684v1",
       "date_added": "2026-07-10",
-      "tags": ["mol-design", "property-pred"]
+      "tags": [
+        "mol-design",
+        "property-pred"
+      ]
     },
     {
       "id": "arXiv:2607.18281",
@@ -127,7 +163,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/html/2607.18281",
       "date_added": "2026-07-11",
-      "tags": ["foundation-MLIP", "property-pred"]
+      "tags": [
+        "foundation-MLIP",
+        "property-pred"
+      ]
     },
     {
       "id": "arXiv:2406.14347",
@@ -136,7 +175,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2406.14347",
       "date_added": "2026-07-14",
-      "tags": ["foundation-MLIP", "property-pred"]
+      "tags": [
+        "foundation-MLIP",
+        "property-pred"
+      ]
     },
     {
       "id": "ChemRxiv:6913ac95",
@@ -145,7 +187,9 @@
       "source": "chemrxiv",
       "url": "https://www.cambridge.org/engage/chemrxiv/article-details/6913ac95ef936fb4a2a8ec31",
       "date_added": "2026-07-15",
-      "tags": ["foundation-MLIP"]
+      "tags": [
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "arXiv:2604.12237",
@@ -154,7 +198,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2604.12237",
       "date_added": "2026-07-17",
-      "tags": ["mol-design", "reaction-opt"]
+      "tags": [
+        "mol-design",
+        "reaction-opt"
+      ]
     },
     {
       "id": "JCIM:5146205",
@@ -163,7 +210,9 @@
       "source": "acs",
       "url": "https://pubs.acs.org/jcisd8/article/66/8/4576/5146205/A-Reinforcement-Learning-Guided-Genetic-Algorithm",
       "date_added": "2026-07-18",
-      "tags": ["mol-design"]
+      "tags": [
+        "mol-design"
+      ]
     },
     {
       "id": "arXiv:2509.21737",
@@ -172,7 +221,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2509.21737",
       "date_added": "2026-07-20",
-      "tags": ["mol-design", "property-pred"]
+      "tags": [
+        "mol-design",
+        "property-pred"
+      ]
     },
     {
       "id": "arXiv:2604.23061",
@@ -181,7 +233,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2604.23061",
       "date_added": "2026-07-21",
-      "tags": ["mol-design"]
+      "tags": [
+        "mol-design"
+      ]
     },
     {
       "id": "JCTC:5149862",
@@ -190,7 +244,10 @@
       "source": "acs",
       "url": "https://pubs.acs.org/jctcce/article/22/7/3373/5149862/Quantum-Chemistry-Driven-Molecular-Inverse-Design",
       "date_added": "2026-07-22",
-      "tags": ["mol-design", "foundation-MLIP"]
+      "tags": [
+        "mol-design",
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "arXiv:2510.15939",
@@ -199,7 +256,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2510.15939",
       "date_added": "2026-07-24",
-      "tags": ["property-pred", "ml4chem-general"]
+      "tags": [
+        "property-pred",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2507.19805",
@@ -208,7 +268,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2507.19805",
       "date_added": "2026-07-26",
-      "tags": ["property-pred", "catalyst-ligand"]
+      "tags": [
+        "property-pred",
+        "catalyst-ligand"
+      ]
     },
     {
       "id": "arXiv:2512.11105",
@@ -217,7 +280,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2512.11105",
       "date_added": "2026-07-27",
-      "tags": ["property-pred", "ml4chem-general"]
+      "tags": [
+        "property-pred",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "MC:s12293-024-00423-5",
@@ -226,7 +292,9 @@
       "source": "science",
       "url": "https://link.springer.com/article/10.1007/s12293-024-00423-5",
       "date_added": "2026-07-28",
-      "tags": ["property-pred"]
+      "tags": [
+        "property-pred"
+      ]
     },
     {
       "id": "ACS:5141511",
@@ -235,7 +303,9 @@
       "source": "acs",
       "url": "https://pubs.acs.org/pcrhej/article/4/4/428/5141511/Graph-Attention-Networks-for-Accurate-and",
       "date_added": "2026-07-29",
-      "tags": ["property-pred"]
+      "tags": [
+        "property-pred"
+      ]
     },
     {
       "id": "DOI:10.1016/j.compchemeng.2026.00481",
@@ -244,7 +314,9 @@
       "source": "science",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S100184172600481X",
       "date_added": "2026-07-30",
-      "tags": ["property-pred"]
+      "tags": [
+        "property-pred"
+      ]
     },
     {
       "id": "JACS:5c22620",
@@ -253,7 +325,9 @@
       "source": "acs",
       "url": "https://pubs.acs.org/doi/10.1021/jacs.5c22620",
       "date_added": "2026-07-30",
-      "tags": ["property-pred"]
+      "tags": [
+        "property-pred"
+      ]
     },
     {
       "id": "NatMI:s42256-025-01087-7",
@@ -262,7 +336,10 @@
       "source": "nature",
       "url": "https://www.nature.com/articles/s42256-025-01087-7",
       "date_added": "2026-07-31",
-      "tags": ["property-pred", "foundation-MLIP"]
+      "tags": [
+        "property-pred",
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "arXiv:1901.06594",
@@ -271,7 +348,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/1901.06594",
       "date_added": "2026-08-01",
-      "tags": ["foundation-MLIP"]
+      "tags": [
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "arXiv:2601.00581",
@@ -280,7 +359,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2601.00581",
       "date_added": "2026-08-02",
-      "tags": ["foundation-MLIP", "property-pred"]
+      "tags": [
+        "foundation-MLIP",
+        "property-pred"
+      ]
     },
     {
       "id": "arXiv:2603.22810",
@@ -289,7 +371,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2603.22810",
       "date_added": "2026-08-05",
-      "tags": ["foundation-MLIP"]
+      "tags": [
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "arXiv:2604.10887",
@@ -298,7 +382,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2604.10887",
       "date_added": "2026-08-06",
-      "tags": ["foundation-MLIP", "ml4chem-general"]
+      "tags": [
+        "foundation-MLIP",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "DOI:10.1016/j.xcrp.2025.101648",
@@ -307,7 +394,9 @@
       "source": "science",
       "url": "https://www.sciencedirect.com/org/science/article/pii/S2041652025016487",
       "date_added": "2026-08-08",
-      "tags": ["property-pred"]
+      "tags": [
+        "property-pred"
+      ]
     },
     {
       "id": "Chem:S2451-9294(24)00156-6",
@@ -316,7 +405,10 @@
       "source": "nature",
       "url": "https://www.cell.com/chem/fulltext/S2451-9294(24)00156-6",
       "date_added": "2026-08-10",
-      "tags": ["reaction-opt", "catalyst-ligand"]
+      "tags": [
+        "reaction-opt",
+        "catalyst-ligand"
+      ]
     },
     {
       "id": "arXiv:2502.19976",
@@ -325,7 +417,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2502.19976",
       "date_added": "2026-08-11",
-      "tags": ["reaction-opt"]
+      "tags": [
+        "reaction-opt"
+      ]
     },
     {
       "id": "PCCP:d5cp01072a",
@@ -334,7 +428,9 @@
       "source": "rsc",
       "url": "https://pubs.rsc.org/en/content/articlelanding/2025/cp/d5cp01072a",
       "date_added": "2026-08-12",
-      "tags": ["reaction-opt"]
+      "tags": [
+        "reaction-opt"
+      ]
     },
     {
       "id": "CPL:0009-2614(23)00063-5",
@@ -343,7 +439,9 @@
       "source": "science",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0009261423000635",
       "date_added": "2026-08-14",
-      "tags": ["property-pred"]
+      "tags": [
+        "property-pred"
+      ]
     },
     {
       "id": "DOI:10.1016/j.xcrp.2026.100525",
@@ -352,7 +450,9 @@
       "source": "science",
       "url": "https://www.sciencedirect.com/org/science/article/pii/S2635098X26000525",
       "date_added": "2026-08-16",
-      "tags": ["mol-design"]
+      "tags": [
+        "mol-design"
+      ]
     },
     {
       "id": "arXiv:2411.05472",
@@ -361,7 +461,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2411.05472",
       "date_added": "2026-08-17",
-      "tags": ["mol-design"]
+      "tags": [
+        "mol-design"
+      ]
     },
     {
       "id": "bioRxiv:2024.07.17.603873",
@@ -370,7 +472,9 @@
       "source": "biorxiv",
       "url": "https://www.biorxiv.org/content/10.1101/2024.07.17.603873.full.pdf",
       "date_added": "2026-08-19",
-      "tags": ["mol-design"]
+      "tags": [
+        "mol-design"
+      ]
     },
     {
       "id": "arXiv:2509.11703",
@@ -379,7 +483,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2509.11703",
       "date_added": "2026-08-20",
-      "tags": ["foundation-MLIP", "ml4chem-general"]
+      "tags": [
+        "foundation-MLIP",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "Adv. Mater.:2026-73603",
@@ -388,7 +495,9 @@
       "source": "nature",
       "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73603",
       "date_added": "2026-08-21",
-      "tags": ["catalyst-ligand"]
+      "tags": [
+        "catalyst-ligand"
+      ]
     },
     {
       "id": "DOI:10.1016/j.jorganchem.2026.001016",
@@ -397,7 +506,9 @@
       "source": "science",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0021951726001016",
       "date_added": "2026-08-22",
-      "tags": ["catalyst-ligand"]
+      "tags": [
+        "catalyst-ligand"
+      ]
     },
     {
       "id": "arXiv:2603.01311",
@@ -406,7 +517,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2603.01311",
       "date_added": "2026-08-23",
-      "tags": ["catalyst-ligand"]
+      "tags": [
+        "catalyst-ligand"
+      ]
     },
     {
       "id": "arXiv:2510.02142",
@@ -415,7 +528,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2510.02142",
       "date_added": "2026-08-24",
-      "tags": ["catalyst-ligand"]
+      "tags": [
+        "catalyst-ligand"
+      ]
     },
     {
       "id": "arXiv:2407.06334",
@@ -424,7 +539,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2407.06334",
       "date_added": "2026-08-26",
-      "tags": ["TS-search"]
+      "tags": [
+        "TS-search"
+      ]
     },
     {
       "id": "arXiv:2411.08306",
@@ -433,7 +550,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/pdf/2411.08306",
       "date_added": "2026-08-27",
-      "tags": ["TS-search", "ml4chem-general"]
+      "tags": [
+        "TS-search",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "IJC:S0031-3204(25)00485-6",
@@ -442,7 +562,9 @@
       "source": "science",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0031320325004856",
       "date_added": "2026-08-28",
-      "tags": ["TS-search"]
+      "tags": [
+        "TS-search"
+      ]
     },
     {
       "id": "NatComm:2023-41698",
@@ -451,7 +573,9 @@
       "source": "nature",
       "url": "https://www.nature.com/articles/s41467-023-41698-5",
       "date_added": "2026-08-29",
-      "tags": ["TS-search"]
+      "tags": [
+        "TS-search"
+      ]
     },
     {
       "id": "PubMed:41317487",
@@ -460,7 +584,10 @@
       "source": "science",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41317487/",
       "date_added": "2026-08-30",
-      "tags": ["property-pred", "ml4chem-general"]
+      "tags": [
+        "property-pred",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "JCIM:2026-5c02063",
@@ -469,7 +596,9 @@
       "source": "acs",
       "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c02063",
       "date_added": "2026-08-31",
-      "tags": ["property-pred"]
+      "tags": [
+        "property-pred"
+      ]
     },
     {
       "id": "arXiv:2507.03407",
@@ -478,7 +607,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2507.03407",
       "date_added": "2026-09-03",
-      "tags": ["ml4chem-general", "property-pred"]
+      "tags": [
+        "ml4chem-general",
+        "property-pred"
+      ]
     },
     {
       "id": "arXiv:2505.02639",
@@ -487,7 +619,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2505.02639",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "TS-search"]
+      "tags": [
+        "llm-chem",
+        "TS-search"
+      ]
     },
     {
       "id": "arXiv:2507.17448",
@@ -496,7 +631,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2507.17448",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "TS-search"]
+      "tags": [
+        "llm-chem",
+        "TS-search"
+      ]
     },
     {
       "id": "arXiv:2507.01444",
@@ -505,7 +643,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2507.01444",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "TS-search"]
+      "tags": [
+        "llm-chem",
+        "TS-search"
+      ]
     },
     {
       "id": "arXiv:2510.16590",
@@ -514,7 +655,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2510.16590",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "TS-search"]
+      "tags": [
+        "llm-chem",
+        "TS-search"
+      ]
     },
     {
       "id": "arXiv:2605.03205",
@@ -523,7 +667,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2605.03205",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "ml4chem-general"]
+      "tags": [
+        "llm-chem",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2512.16424",
@@ -532,7 +679,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2512.16424",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "TS-search"]
+      "tags": [
+        "llm-chem",
+        "TS-search"
+      ]
     },
     {
       "id": "arXiv:2604.06685",
@@ -541,7 +691,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2604.06685",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "ml4chem-general"]
+      "tags": [
+        "llm-chem",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2605.01822",
@@ -550,7 +703,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2605.01822",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "ml4chem-general"]
+      "tags": [
+        "llm-chem",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2505.21318",
@@ -559,7 +715,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2505.21318",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "ml4chem-general"]
+      "tags": [
+        "llm-chem",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2606.03660",
@@ -568,7 +727,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2606.03660",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "ml4chem-general"]
+      "tags": [
+        "llm-chem",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2603.25253",
@@ -577,7 +739,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2603.25253",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "ml4chem-general"]
+      "tags": [
+        "llm-chem",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2512.19240",
@@ -586,7 +751,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2512.19240",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem", "ml4chem-general"]
+      "tags": [
+        "llm-chem",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2602.07415",
@@ -595,7 +763,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2602.07415",
       "date_added": "2026-09-03",
-      "tags": ["catalyst-ligand", "organocatalysis"]
+      "tags": [
+        "catalyst-ligand",
+        "organocatalysis"
+      ]
     },
     {
       "id": "arXiv:2601.03689",
@@ -604,7 +775,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2601.03689",
       "date_added": "2026-09-03",
-      "tags": ["reaction-opt"]
+      "tags": [
+        "reaction-opt"
+      ]
     },
     {
       "id": "arXiv:2603.05526",
@@ -613,7 +786,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2603.05526",
       "date_added": "2026-09-03",
-      "tags": ["catalyst-ligand", "ml4chem-general"]
+      "tags": [
+        "catalyst-ligand",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "chemrxiv:2025-l7c4q",
@@ -622,7 +798,10 @@
       "source": "chemrxiv",
       "url": "https://doi.org/10.26434/chemrxiv-2025-l7c4q",
       "date_added": "2026-09-03",
-      "tags": ["catalyst-ligand", "organocatalysis"]
+      "tags": [
+        "catalyst-ligand",
+        "organocatalysis"
+      ]
     },
     {
       "id": "chemrxiv:2025-zp7rn",
@@ -631,7 +810,10 @@
       "source": "chemrxiv",
       "url": "https://doi.org/10.26434/chemrxiv-2025-zp7rn",
       "date_added": "2026-09-03",
-      "tags": ["catalyst-ligand", "organocatalysis"]
+      "tags": [
+        "catalyst-ligand",
+        "organocatalysis"
+      ]
     },
     {
       "id": "chemrxiv:2026-d6slj",
@@ -640,7 +822,10 @@
       "source": "chemrxiv",
       "url": "https://doi.org/10.26434/chemrxiv-2026-d6slj",
       "date_added": "2026-09-03",
-      "tags": ["catalyst-ligand", "organocatalysis"]
+      "tags": [
+        "catalyst-ligand",
+        "organocatalysis"
+      ]
     },
     {
       "id": "chemrxiv:2025-6v1sf",
@@ -649,7 +834,9 @@
       "source": "chemrxiv",
       "url": "https://doi.org/10.26434/chemrxiv-2025-6v1sf",
       "date_added": "2026-09-03",
-      "tags": ["catalyst-ligand"]
+      "tags": [
+        "catalyst-ligand"
+      ]
     },
     {
       "id": "chemrxiv:2025-chn4j",
@@ -658,7 +845,9 @@
       "source": "chemrxiv",
       "url": "https://doi.org/10.26434/chemrxiv-2025-chn4j",
       "date_added": "2026-09-03",
-      "tags": ["catalyst-ligand"]
+      "tags": [
+        "catalyst-ligand"
+      ]
     },
     {
       "id": "arXiv:2503.07424",
@@ -667,7 +856,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2503.07424",
       "date_added": "2026-09-03",
-      "tags": ["catalyst-ligand", "property-pred"]
+      "tags": [
+        "catalyst-ligand",
+        "property-pred"
+      ]
     },
     {
       "id": "arXiv:2502.19976",
@@ -676,7 +868,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2502.19976",
       "date_added": "2026-09-03",
-      "tags": ["reaction-opt"]
+      "tags": [
+        "reaction-opt"
+      ]
     },
     {
       "id": "arXiv:2605.05746",
@@ -685,7 +879,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2605.05746",
       "date_added": "2026-09-03",
-      "tags": ["foundation-MLIP"]
+      "tags": [
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "arXiv:2601.09845",
@@ -694,7 +890,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2601.09845",
       "date_added": "2026-09-03",
-      "tags": ["foundation-MLIP", "property-pred"]
+      "tags": [
+        "foundation-MLIP",
+        "property-pred"
+      ]
     },
     {
       "id": "chemrxiv:15000716",
@@ -703,7 +902,9 @@
       "source": "chemrxiv",
       "url": "https://chemrxiv.org/engage/chemrxiv/article-details/15000716",
       "date_added": "2026-09-03",
-      "tags": ["foundation-MLIP"]
+      "tags": [
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "chemrxiv:15002208",
@@ -712,7 +913,10 @@
       "source": "chemrxiv",
       "url": "https://chemrxiv.org/engage/chemrxiv/article-details/15002208",
       "date_added": "2026-09-03",
-      "tags": ["property-pred", "ml4chem-general"]
+      "tags": [
+        "property-pred",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "chemrxiv:2025-vxsvs",
@@ -721,7 +925,10 @@
       "source": "chemrxiv",
       "url": "https://doi.org/10.26434/chemrxiv-2025-vxsvs",
       "date_added": "2026-09-03",
-      "tags": ["ml4chem-general", "foundation-MLIP"]
+      "tags": [
+        "ml4chem-general",
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "arXiv:2505.08688",
@@ -730,7 +937,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2505.08688",
       "date_added": "2026-09-03",
-      "tags": ["ml4chem-general"]
+      "tags": [
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2508.20527",
@@ -739,7 +948,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2508.20527",
       "date_added": "2026-09-03",
-      "tags": ["ml4chem-general"]
+      "tags": [
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2506.18525",
@@ -748,7 +959,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2506.18525",
       "date_added": "2026-09-03",
-      "tags": ["ml4chem-general"]
+      "tags": [
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2602.15019",
@@ -757,7 +970,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2602.15019",
       "date_added": "2026-09-03",
-      "tags": ["ml4chem-general"]
+      "tags": [
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2508.05427",
@@ -766,7 +981,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2508.05427",
       "date_added": "2026-09-03",
-      "tags": ["llm-chem"]
+      "tags": [
+        "llm-chem"
+      ]
     },
     {
       "id": "arXiv:2507.01793",
@@ -775,7 +992,10 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2507.01793",
       "date_added": "2026-09-03",
-      "tags": ["TS-search", "property-pred"]
+      "tags": [
+        "TS-search",
+        "property-pred"
+      ]
     },
     {
       "id": "AdvSci:advs.202506240",
@@ -784,7 +1004,10 @@
       "source": "acs",
       "url": "https://doi.org/10.1002/advs.202506240",
       "date_added": "2026-09-03",
-      "tags": ["TS-search", "foundation-MLIP"]
+      "tags": [
+        "TS-search",
+        "foundation-MLIP"
+      ]
     },
     {
       "id": "JCTC:jctc.5c01047",
@@ -793,7 +1016,10 @@
       "source": "acs",
       "url": "https://doi.org/10.1021/acs.jctc.5c01047",
       "date_added": "2026-09-03",
-      "tags": ["TS-search", "catalyst-ligand"]
+      "tags": [
+        "TS-search",
+        "catalyst-ligand"
+      ]
     },
     {
       "id": "DD:D5DD00240K",
@@ -802,7 +1028,10 @@
       "source": "acs",
       "url": "https://doi.org/10.1039/D5DD00240K",
       "date_added": "2026-09-03",
-      "tags": ["TS-search", "reaction-opt"]
+      "tags": [
+        "TS-search",
+        "reaction-opt"
+      ]
     },
     {
       "id": "ChemCatalysis:checat.2025.101458",
@@ -811,7 +1040,10 @@
       "source": "acs",
       "url": "https://doi.org/10.1016/j.checat.2025.101458",
       "date_added": "2026-09-03",
-      "tags": ["TS-search", "ml4chem-general"]
+      "tags": [
+        "TS-search",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "WIREs:wcms.70025",
@@ -820,7 +1052,10 @@
       "source": "acs",
       "url": "https://doi.org/10.1002/wcms.70025",
       "date_added": "2026-09-03",
-      "tags": ["TS-search", "ml4chem-general"]
+      "tags": [
+        "TS-search",
+        "ml4chem-general"
+      ]
     },
     {
       "id": "arXiv:2512.14993",
@@ -829,7 +1064,9 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2512.14993",
       "date_added": "2026-09-03",
-      "tags": ["TS-search"]
+      "tags": [
+        "TS-search"
+      ]
     },
     {
       "id": "NatComm:s41467-026-72945-0",
@@ -838,7 +1075,10 @@
       "source": "nature",
       "url": "https://www.nature.com/articles/s41467-026-72945-0",
       "date_added": "2026-09-03",
-      "tags": ["TS-search", "reaction-opt"]
+      "tags": [
+        "TS-search",
+        "reaction-opt"
+      ]
     },
     {
       "id": "arXiv:2606.30778",
@@ -847,7 +1087,45 @@
       "source": "arxiv",
       "url": "https://arxiv.org/abs/2606.30778",
       "date_added": "2026-09-03",
-      "tags": ["TS-search", "ml4chem-general"]
+      "tags": [
+        "TS-search",
+        "ml4chem-general"
+      ]
+    },
+    {
+      "id": "arXiv:2603.12666",
+      "title": "RetroReasoner: A Reasoning LLM for Strategic Retrosynthesis Prediction",
+      "authors": "RetroReasoner team",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2603.12666",
+      "date_added": "2026-11-03",
+      "tags": [
+        "llm-chem",
+        "TS-search"
+      ]
+    },
+    {
+      "id": "DOI:10.1039/D5DD00534E",
+      "title": "Evaluation of foundational machine learned interatomic potentials for migration barrier predictions",
+      "authors": "Digital Discovery 2026",
+      "source": "rsc",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2026/dd/d5dd00534e",
+      "date_added": "2026-11-03",
+      "tags": [
+        "foundation-MLIP",
+        "TS-search"
+      ]
+    },
+    {
+      "id": "arXiv:2502.15582",
+      "title": "Fine-tuning foundation models of materials interatomic potentials with frozen transfer learning",
+      "authors": "Radova et al.",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2502.15582",
+      "date_added": "2026-11-03",
+      "tags": [
+        "foundation-MLIP"
+      ]
     }
   ]
 }
