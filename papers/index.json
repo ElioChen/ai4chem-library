@@ -1126,6 +1126,150 @@
       "tags": [
         "foundation-MLIP"
       ]
+    },
+    {
+      "id": "https://pubs.acs.org/jcisd8/article/66/7/3590/5138360/Graph-Neural-Networks-Model-Based-on-Atomic",
+      "title": "Graph Neural Networks Model Based on Atomic Hybridization for Drug Target Prediction",
+      "authors": "",
+      "source": "web",
+      "url": "https://pubs.acs.org/jcisd8/article/66/7/3590/5138360/Graph-Neural-Networks-Model-Based-on-Atomic",
+      "date_added": "2026-03-01",
+      "tags": []
+    },
+    {
+      "id": "https://arxiv.org/pdf/2312.03613",
+      "title": "Augmenting Optimization-Based Molecular Design with Graph Neural Networks",
+      "authors": "",
+      "source": "web",
+      "url": "https://arxiv.org/pdf/2312.03613",
+      "date_added": "2026-03-01",
+      "tags": []
+    },
+    {
+      "id": "https://link.springer.com/article/10.1007/s10822-025-00745-7",
+      "title": "AI-driven Molecular Modeling and Design: From Property Prediction to Drug Generation",
+      "authors": "",
+      "source": "web",
+      "url": "https://link.springer.com/article/10.1007/s10822-025-00745-7",
+      "date_added": "2026-03-01",
+      "tags": []
+    },
+    {
+      "id": "https://arxiv.org/pdf/2508.16521",
+      "title": "Guiding Diffusion Models with Reinforcement Learning for Stable Molecule Generation",
+      "authors": "",
+      "source": "web",
+      "url": "https://arxiv.org/pdf/2508.16521",
+      "date_added": "2026-04-01",
+      "tags": []
+    },
+    {
+      "id": "https://www.science.org/doi/10.1126/sciadv.ady9955",
+      "title": "SeFMol: Steering Semi-Flexible Molecular Diffusion for Structure-Based Drug Design",
+      "authors": "",
+      "source": "web",
+      "url": "https://www.science.org/doi/10.1126/sciadv.ady9955",
+      "date_added": "2026-04-01",
+      "tags": []
+    },
+    {
+      "id": "https://arxiv.org/pdf/2605.15354",
+      "title": "Controllable Molecular Generative Foundation Models",
+      "authors": "",
+      "source": "web",
+      "url": "https://arxiv.org/pdf/2605.15354",
+      "date_added": "2026-04-01",
+      "tags": []
+    },
+    {
+      "id": "https://arxiv.org/pdf/2605.07020",
+      "title": "FlashMol: High-Quality Molecule Generation in as Few as Four Steps",
+      "authors": "",
+      "source": "web",
+      "url": "https://arxiv.org/pdf/2605.07020",
+      "date_added": "2026-04-01",
+      "tags": []
+    },
+    {
+      "id": "https://www.nature.com/articles/s41467-026-73184-z",
+      "title": "NN-xTB: Density Functional Accuracy at Semi-Empirical Speed",
+      "authors": "",
+      "source": "web",
+      "url": "https://www.nature.com/articles/s41467-026-73184-z",
+      "date_added": "2026-05-01",
+      "tags": []
+    },
+    {
+      "id": "https://academic.oup.com/chemlett/article/55/5/upag061/8663812",
+      "title": "Accuracy of Advanced Neural Network Potential for Reaction Thermodynamics",
+      "authors": "",
+      "source": "web",
+      "url": "https://academic.oup.com/chemlett/article/55/5/upag061/8663812",
+      "date_added": "2026-05-01",
+      "tags": []
+    },
+    {
+      "id": "https://pubs.acs.org/doi/10.1021/acsphyschemau.4c00004",
+      "title": "The Potential of Neural Network Potentials",
+      "authors": "",
+      "source": "web",
+      "url": "https://pubs.acs.org/doi/10.1021/acsphyschemau.4c00004",
+      "date_added": "2026-05-01",
+      "tags": []
+    },
+    {
+      "id": "https://arxiv.org/pdf/2209.11581",
+      "title": "Neural Network Potentials for Chemistry: Concepts, Applications and Prospects",
+      "authors": "",
+      "source": "web",
+      "url": "https://arxiv.org/pdf/2209.11581",
+      "date_added": "2026-05-01",
+      "tags": []
+    },
+    {
+      "id": "https://www.patsnap.com/resources/blog/articles/ai-protein-structure-prediction-landscape-2026/",
+      "title": "AI Protein Structure Prediction Landscape 2026",
+      "authors": "",
+      "source": "web",
+      "url": "https://www.patsnap.com/resources/blog/articles/ai-protein-structure-prediction-landscape-2026/",
+      "date_added": "2026-06-01",
+      "tags": []
+    },
+    {
+      "id": "https://www.technologynetworks.com/informatics/articles/alphafold-and-the-protein-structure-prediction-revolution-what-it-can-and-cant-do-for-your-research-414654",
+      "title": "AlphaFold and Protein Structure Prediction Revolution",
+      "authors": "",
+      "source": "web",
+      "url": "https://www.technologynetworks.com/informatics/articles/alphafold-and-the-protein-structure-prediction-revolution-what-it-can-and-cant-do-for-your-research-414654",
+      "date_added": "2026-06-01",
+      "tags": []
+    },
+    {
+      "id": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10452104/",
+      "title": "AlphaFold3: Extending to Complexes and Small Molecules",
+      "authors": "",
+      "source": "web",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10452104/",
+      "date_added": "2026-06-01",
+      "tags": []
+    },
+    {
+      "id": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aidi.202500061",
+      "title": "Graph Attention Neural Networks for Interpretable and Generalizable Prediction of Janus III-VI Van Der Waals Heterostructures",
+      "authors": "",
+      "source": "web",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/aidi.202500061",
+      "date_added": "2026-07-01",
+      "tags": []
+    },
+    {
+      "id": "https://www.cell.com/chem/fulltext/S2451-9294(24",
+      "title": "Machine learning-guided yield optimization for palladaelectro-catalyzed annulation reaction",
+      "authors": "",
+      "source": "web",
+      "url": "https://www.cell.com/chem/fulltext/S2451-9294(24",
+      "date_added": "2026-08-01",
+      "tags": []
     }
   ]
 }
