@@ -1,15 +1,32 @@
 # AI4Chem 分子机器学习文献库
 
-自动化的分子机器学习研究文献收集、分析、归档系统。每日自动检索最新论文，整理为结构化归档。
+> **Standalone** (独立项目): literature library for molecular machine learning. Not related to the author's other chemistry projects.
+
+自动化的分子机器学习研究文献收集、分析、归档系统。每周自动检索最新论文，整理为结构化归档。
 
 ## 🎯 项目概述
 
 **AI4Chem Library** 是一个由 Claude Code 云端 Routine 驱动的**自动化文献管理系统**。
 
-- **覆盖范围**：2026 年 1-8 月，165 篇分子 ML 论文
-- **自动化频率**：每天 06:00 荷兰时间执行
+- **覆盖范围**：2025 年 1 月至 2026 年 9 月的月度归档(`papers/2025-01.md` 至 `papers/2026-09.md`)
+- **论文数量**:各处统计不一致,见下方「已知问题」
+- **自动化频率**：每周一次,建议周五触发(详见 `papers/ROUTINE_PROMPT.md`;2026-09-07 起由每日改为每周)
 - **研究方向**：7 大分子 ML 领域（基础模型、性质预测、反应优化、分子设计、催化剂、逆合成等）
 - **质量保障**：每篇论文包含完整作者、详细摘要、研究方向标签
+
+
+## ⚠️ 已知问题 / Known issues
+
+论文数量在不同位置不一致,尚未重新统计,所以下面各处的数字请**不要直接引用**:
+
+| 位置 | 写的数字 |
+|---|---|
+| 本 README(项目概述、结构、页脚) | 165 篇 |
+| `papers/README.md` | 429 篇 |
+| `papers/index.json`(去重索引,实际条目数) | 93 条 |
+| 月度归档 `papers/YYYY-MM.md` | 每月文件开头写总数,但很多只详细列出少数几篇,其余只有摘要 |
+
+建议:以后以 `papers/index.json` 的条目数为准,并让 Routine 每次更新时同步写回统计。
 
 ## 📂 项目结构
 
@@ -63,7 +80,7 @@
 
 ### 配置信息
 
-- **触发时间**：每天 04:00 UTC（= 06:00 荷兰夏令时）
+- **触发时间**：每周五(原为每天 04:00 UTC;2026-09-07 起改为每周,见 `papers/ROUTINE_PROMPT.md`)
 - **执行环境**：Claude Code Cloud Runtime
 - **模型**：claude-sonnet-5
 - **工具**：WebSearch、Bash、Read/Write/Edit、Grep
